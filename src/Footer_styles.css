@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.logo-ieee{
+    background-color: #FFFFFF;
+}
+
+.ruler{
+    border: 1px solid #3DB2FF;
+    display: block;
+    width: 95%;
+}
+.footer {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 2px;
+}
+
+.Footer-name{
+  background: -webkit-linear-gradient(36deg,#a940fe, #06d3ec);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.thankstext{
+    font-family: Poppins;
+    font-size: 3.4rem;
+    font-weight: 500;
+}
+
+.container-1 {
+    display: flex;
+}
+
+.footer-main {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.col-1 {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.footer-main p {
+    font-size: 0.9rem;
+    text-align: left;
+    font-family: Poppins;
+    padding: 5px;
+
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin: 0 10px;
+    padding: 10px;
+
+}
+
+.footer-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.col-1 ul li a:hover {
+    color: #1D3557;
+    font-weight: 600;
+    padding-left: 2px;
+    transition: all 0.3s ease;
+}
+
+.footer-links li h2 {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    position: relative;
+
+}
+
+.footer-links h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 3px;
+    width: 60px;
+    border: 2px solid #000000;
+    border-radius: 7px 7px 7px 7px;
+    height: 0.2px;
+    background: #000000;
+}
+
+.bottom-content {
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin-bottom: -15px;
+}
+.icons{
+    color: grey;
+    transition: all 0.25s ease-in-out;
+}
+
+.icons:hover{
+    color: #3DB2FF;
+}
+
+@media screen and (max-width:576px) {
+    .APP {
+        min-height: 50vh;
+    }
+
+    .footer {
+        margin-top: 13px;
+        position: sticky;
+        display: grid;
+        position: -webkit-sticky;
+    }
+
+    .container-1 {
+        display: block;
+    }
+
+    .bottom {
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .container-1 {
+        display: block;
+    }
+
+    .footer {
+        position: sticky;
+        position: -webkit-sticky;
+    }
+
+    .bottom {
+        display: block;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .container-1 {
+        display: block;
+    }
+
+    .footer {
+        position: sticky;
+        position: -webkit-sticky;
+    }
+
+    .bottom {
+        display: block;
+    }
+}

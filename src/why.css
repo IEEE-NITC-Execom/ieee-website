@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Open+Sans&display=swap');
+
+.page-lay{
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+.heading{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 450%;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left{
+    float: left;
+    width: 30%;
+    background: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    padding: 3px;
+    box-shadow: 10px 10px lightblue;
+}
+
+.center{
+    float: center;
+    width: 30%;
+    background: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    padding: 3px;
+    box-shadow: 10px 10px lightblue;
+}
+.right{
+    float: right;
+    width: 30%;
+    background: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    padding: 3px;
+    box-shadow: 10px 10px lightblue;
+}
+
+.subhead{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200%;
+    font-weight: 600;
+    margin: 7px;
+    margin-top: 10px;
+}
+
+.image{
+    width: 4rem;
+    height: auto;
+    margin-top: 4%;
+}
+
+.text{
+    font-family: "Open Sans";
+    font-size: 100%;
+    text-align: center;
+    padding: 7px;
+}
+
+.module {
+    background: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 87%;
+  }
+
+@media (max-width: 1000px) {
+    .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .left{
+        float: none;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    
+    .center{
+        float: none;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    .right{
+        float: none;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .left{
+        float: none;
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    
+    .center{
+        float: none;
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    .right{
+        float: none;
+        width: 80%;
+        margin-bottom: 5%;
+    }
+  }

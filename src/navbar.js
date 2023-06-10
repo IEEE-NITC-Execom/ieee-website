@@ -5,6 +5,18 @@ import { FaTimes, FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+
+  const changeback = () => {
+    if (window.scrollY >= 100) {
+      setNavbar(true)
+    } 
+    else {
+      setNavbar(false)
+    }
+  }
+
+  window.addEventListener("scroll", changeback);
 
   const handleToggleMenu = () => {
     setIsMobile(!isMobile);
@@ -17,7 +29,7 @@ const Navbar = () => {
 
   const navItems = [
     { text: "Home" },
-    { text: "Societies" },
+    { text: "Chapters" },
     { text: "Execom" },
     { text: "Contact Us" },
     { text: "Join IEEE" },
@@ -26,8 +38,8 @@ const Navbar = () => {
   const [activeItem, setActiveItem] = useState(0);
 
   return (
-    <>
-      <div className="navbar">
+    <div className="container">
+      <div className={navbar?"navbar-activate":"navbar"}>
         <div className="logo">
           <img src={Logo} alt="logo-img" className="logo-resizer" />
         </div>
@@ -36,7 +48,7 @@ const Navbar = () => {
             <li key={index}>
               <a
                 href="/"
-                className={index === activeItem ? "active" : ""}
+                className={index === activeItem ? "active" : "non-active"}
                 onClick={() => handleItemClick(index)}
               >
                 {item.text}
@@ -46,13 +58,13 @@ const Navbar = () => {
         </div>
         <button className="mobile-menu-icon" onClick={handleToggleMenu}>
           {isMobile ? (
-            <FaTimes size={20} style={{ color: "white" }} />
+            <FaTimes size={20} className="icon-color" />
           ) : (
-            <FaBars size={20} style={{ color: "white" }} />
+            <FaBars size={20} className="icon-color" />
           )}
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
