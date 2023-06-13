@@ -4,7 +4,7 @@
     font-size: 300%;
     text-align: center;
     width: 100%;
-    background-color: #06D3EC;
+    background: linear-gradient(90deg,#AF40FF, #5B42F3 50%,#00DDEB);
     object-fit: contain;
     color: black;
     display: flex;
