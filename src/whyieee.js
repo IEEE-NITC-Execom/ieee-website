@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import globalImage from "./assets/global2.png";
 import educationImage from "./assets/edcation.png";
 import developImage from "./assets/develop.png";
