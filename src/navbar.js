@@ -4,8 +4,16 @@ import Logo from "./assets/logo.png";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { ActiveContext } from "./activecontext";
+import { useScroll, motion, useSpring } from 'framer-motion';
 
 const Navbar = () => {
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
 
   const [isMobile, setIsMobile] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -43,6 +51,11 @@ const Navbar = () => {
   ];
 
   return (
+    <>
+    <motion.div
+        className="progress-bar"
+        style={{ scaleX: scaleX }}
+      />
     <div className="container">
       <div className={navbar?"navbar-activate":"navbar"}>
         <div className="logo">
@@ -69,7 +82,8 @@ const Navbar = () => {
           )}
         </button>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

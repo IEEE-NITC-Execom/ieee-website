@@ -5,8 +5,10 @@ import Footer from './Footer';
 import Whywe from './whyieee';
 import FrameScroll from './scrollcard';
 import { useEffect } from 'react';
+import "./home.css"
 
 function Home() {
+
 
   useEffect(() => {
     window.scrollTo(0, 0);

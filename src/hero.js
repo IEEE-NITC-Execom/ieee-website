@@ -13,10 +13,10 @@ const Hero = () => {
         </div>
         <div className="hero-content">
           <p>
-            IEEE is the world's largest technical professional association with
-            more than 350,000 members in 150 countries. It is a non-profit organization that is dedicated
-            to advancing the theory and application of electrical and electronics engineering and
-            computer science.
+            IEEE and its members inspire a global community through highly-cited publications, conferences,
+            technology standards, and professional and educational activities. We are the world’s largest professional
+            association advancing innovation and technological excellence for the benefit of humanity.
+            
           </p>
         </div>
         <div class="buttons">
