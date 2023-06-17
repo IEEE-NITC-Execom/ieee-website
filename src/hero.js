@@ -10,6 +10,7 @@ const Hero = () => {
           <p className="hero-title">
             IEEE Student Branch NITC
           </p>
+          {/* <p className="hero-main-title">Institute of Electrical and Electronics Engineers</p> */}
         </div>
         <div className="hero-content">
           <p>

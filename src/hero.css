@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .hero {
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
@@ -12,25 +14,28 @@
   background-image: url("./assets/back.jpg");
   width: 100%;
   background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  /* background-repeat: no-repeat; Do not repeat the image */
   background-size: cover;
+  height: 100vh;
+  z-index: 1;
 }
   .hero-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif ;
     font-weight: 400;
     font-size: calc(20px + 4vw); /* Adjust the font size as desired */
     color: white;
     text-align: center;
+    /* margin-left: 10%; */
     margin-top: 35%;
     margin-bottom: 10%;
-    z-index: 1000;
+    z-index: 1;
   }
-
   .hero-content {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', normal;
     margin: 1rem;
     font-size: calc(16px + 0.6vw);
-    color: black;
+    color: #777777;
+    font-weight: 100;
     text-align: center;
     width: 70%;
   }
