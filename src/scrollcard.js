@@ -27,7 +27,7 @@ const FrameScroll = () => {
             </div>
             <motion.div ref={carousal} className="carousal" whileTap={{cursor:'grabbing'}} initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}>
-                <motion.div drag='x' dragConstraints={{right:0, left:-width}} className="inner">
+                <div drag='x' dragConstraints={{ right: 0, left: -width }} className="inner" style={{userSelect: "none", transform: "none", touchAction:"pan-x"}}>
                     {images.map((each) => {
                         return(
                         <motion.div className="item">
@@ -35,7 +35,7 @@ const FrameScroll = () => {
                         </motion.div>
                         )
                     })}
-                </motion.div>
+                </div>
             </motion.div>
             <Link to="/gallery">
                 <button className="button-64">
