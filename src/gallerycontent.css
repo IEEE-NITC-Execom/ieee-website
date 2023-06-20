@@ -32,10 +32,12 @@
     object-fit: contain;
     margin: 20px;
     box-shadow: 10px 10px lightblue;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
 }
-.each-item:hover{
-    flex-grow: 1.5;
+.image-gallery:hover{
+    transform: scale(1.5);
+    transition-duration: 1s;
     cursor: pointer;
 }
 .image-gallery{
@@ -51,18 +53,22 @@
     .image-row{
         margin-left: 10px;
         margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .each-item{
-    width: 30%;
-    height: inherit;
-    border-radius: 10px;
-    object-fit: contain;
-    margin: 20px;
-    box-shadow: 10px 10px lightblue;
-    transition: all 0.5s ease-in-out;
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: contain;
+        margin: 20px;
+        box-shadow: 10px 10px lightblue;
+        transition: all 0.5s ease-in-out;
     }
     .each-item:hover{
-        width: 100%;
+        width: 80%;
+        box-shadow: none;
     }
 
 }

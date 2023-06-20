@@ -31,11 +31,12 @@
     z-index: 1;
   }
   .hero-content {
-    font-family: 'Roboto', normal;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-style:normal;
     margin: 1rem;
     font-size: calc(16px + 0.6vw);
-    color: #777777;
-    font-weight: 100;
+    color: black;
     text-align: center;
     width: 70%;
   }
@@ -142,5 +143,8 @@
   .hero-title {
     margin-top: 300px;
     margin-bottom: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
 }

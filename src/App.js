@@ -6,13 +6,15 @@ import Chapters from './pages/chapters';
 import { ActiveContext } from './activecontext';
 import { useState } from 'react';
 
+import "./App.css"
+
 function App() {
 
   const [activeItem, setActiveItem] = useState(0);
 
   return (
     <ActiveContext.Provider value={{activeItem, setActiveItem}}>
-    <div className="App">
+      <div className="App">
       <BrowserRouter>
         <Routes>
           <Route index element={ 

@@ -15,11 +15,11 @@ a {
   margin: auto;
   width: 100%;
   transition: all 0.6s;
-  z-index: 1000;
+  z-index: 2;
 }
 
 .nav-items a:hover{
-  color: #F6FA70;
+  color: #FFA372;
 }
 
 .navbar {
@@ -62,9 +62,7 @@ a {
   padding: 5px;
   transition: all 0.6s;
 }
-.navbar-activate .nav-items a{
-  color: white;
-}
+
 .nav-items {
   display: flex;
   flex-direction: row;
@@ -85,10 +83,10 @@ a {
 }
 
 .active {
-  color: #FFE79B;
+  color: #ED6663;
 }
-.navbar .non-active{
-  color: azure;
+.non-active{
+  color: white;
 }
 
 .mobile-menu-icon {
@@ -99,6 +97,9 @@ a {
   .nav-items a {
     font-size: medium;
   }
+  .active {
+  color: #ED6663;
+}
 }
 
 @media screen and (max-width: 926px) {
@@ -161,7 +162,6 @@ a {
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 600;
-    color: white;
   }
   .navbar-activate .nav-items-mobile li a {
     text-align: center;
@@ -172,7 +172,6 @@ a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    color: white;
   }
 
   .nav-items {
