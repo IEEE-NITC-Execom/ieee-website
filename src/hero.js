@@ -1,6 +1,5 @@
 import React from "react";
 import "./hero.css";
-import AboutUs from "./pages/aboutus";
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
