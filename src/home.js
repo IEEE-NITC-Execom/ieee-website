@@ -19,7 +19,7 @@ function Home() {
       <Navbar />
       <Hero />
       <Whywe/>
-      <FrameScroll/>
+      <FrameScroll />
       <Footer/>
     </div>
   );

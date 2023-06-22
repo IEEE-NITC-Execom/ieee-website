@@ -31,6 +31,7 @@
 .text-area{
     width: 100%;
 }
+
 .head-gallery{
     font-family: Poppins;
     font-size: 3.4rem;
@@ -73,14 +74,14 @@
     transition: 300ms;
   }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar{
   height: 4px;
   width: 7px;
   background: white;
   -webkit-border-radius: 1rem;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:horizontal{
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
   -webkit-border-radius: 1rem;
 }

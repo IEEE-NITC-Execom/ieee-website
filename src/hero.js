@@ -1,5 +1,6 @@
 import React from "react";
 import "./hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -32,25 +33,16 @@ const Hero = () => {
                 </a>
               </div>
             </div> */}
-          <button class="button-64">
-            <span class="text">
-              <a
+          <button className="aboutus">
+            <div className="textspan">
+              <Link
                 className="login"
-                href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join"
+                to = "/about"
               >
-                Join IEEE
-              </a>
-            </span>
-          </button>
-          <button class="button-64">
-            <span class="text">
-              <a
-                className="login"
-                href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join"
-              >
-                Learn More
-              </a>
-            </span>
+                Learn More About Us
+              </Link>
+            </div>
+            
           </button>
           {/* <div class="button2">
               <div class="link">
