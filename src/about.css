@@ -41,8 +41,8 @@
   margin: 0;
 }
 .text-container-1 {
-  background-color: rgba(232, 160, 191, 0.6);
-  border: 1px solid #e8a0bf;
+  background-color: rgb(255, 140, 148, 0.6);
+  border: 1px solid #FF8C94;
   border-radius: 2rem;
   border-width: medium;
   margin: 5% auto;

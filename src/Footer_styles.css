@@ -11,13 +11,13 @@
     width: 95%;
 }
 .footer {
-    background-color: #FFFFFF;
+    background-color: #f9f9f9;
     box-sizing: border-box;
-    border: none;
     outline: none;
     display: flex;
     flex-direction: column;
-    padding: 10px 30px 2px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .Footer-name{
@@ -67,7 +67,8 @@
 }
 
 .footer-links li a {
-    color: #333;
+    color: #757575;
+    font-weight: 500;
     text-decoration: none;
     font-size: medium;
 }
@@ -80,7 +81,7 @@
 }
 
 .footer-links li h2 {
-    color: #000;
+    color: #867575;
     font-size: 18px;
     margin-bottom: 18px;
     font-weight: 600;
@@ -88,23 +89,12 @@
 
 }
 
-.footer-links h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    height: 3px;
-    width: 60px;
-    border: 2px solid #000000;
-    border-radius: 7px 7px 7px 7px;
-    height: 0.2px;
-    background: #000000;
-}
-
 .bottom-content {
     font-size: 14px;
     text-align: center;
-    padding: 15px 0;
+    background-color: rgb(158, 150, 150,0.8);
+    padding-bottom: 5px;
+    width: 100%;
 }
 
 .social-media {
@@ -122,6 +112,16 @@
 .icons:hover{
     color: #3DB2FF;
 }
+.bottom {
+        display: block;
+        font-family: Poppins;
+        font-size: 100%;
+        font-weight: 500;
+        height: 100%;
+        color: black;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
 
 @media screen and (max-width:576px) {
     .APP {
