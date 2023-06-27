@@ -70,9 +70,9 @@ export default function Footer() {
                 <div class="bottom-content">
                     <div className="container-2">
                         <hr style={{
-                            backgroundColor: " #000000",
-                            border: "#000000",
-                            borderRadius: "7px 7px 7px 7px",
+                            backgroundColor: "rgb(158, 150, 150)",
+                            border: "rgb(158, 150, 150)",
+                            width:"80%",
                             height: "0.2px"
                         }} />
 

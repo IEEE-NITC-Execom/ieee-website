@@ -5,6 +5,7 @@ import { FaTimes, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { ActiveContext } from "./activecontext";
 import { useScroll, motion, useSpring } from 'framer-motion';
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
 
@@ -62,8 +63,20 @@ const Navbar = () => {
           <img src={Logo} alt="logo-img" className="logo-resizer" />
         </div>
         <div className={isMobile ? "nav-items-mobile" : "nav-items"}>
-          {navItems.map((item, index) => (
-            <li key={index}>
+            {navItems.map((item, index) => {
+              if (item.text === "contact Us"){
+              return <li key={index}>
+              <HashLink
+                to={"/about#contactus"}
+                className={index === activeItem ? "active" : "non-active"}
+                onClick={() => handleItemClick(index)}
+              >
+                {item.text}
+              </HashLink>
+              </li>
+            }
+            else{
+              return <li key={index}>
               <Link
                 to={'/' + item.text}
                 className={index === activeItem ? "active" : "non-active"}
@@ -72,7 +85,8 @@ const Navbar = () => {
                 {item.text}
               </Link>
             </li>
-          ))}
+            }
+            })}
         </div>
         <button className="mobile-menu-icon" onClick={handleToggleMenu}>
           {isMobile ? (

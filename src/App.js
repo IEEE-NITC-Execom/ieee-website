@@ -3,7 +3,7 @@ import Home from './home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Gallery from "./pages/gallery"
 import Chapters from './pages/chapters';
-import AboutUs from './pages/aboutus';
+import AboutUs from "./pages/aboutus";
 import { ActiveContext } from './activecontext';
 import { useState } from 'react';
 
@@ -25,9 +25,9 @@ function App() {
           <Route path="/gallery" element={ 
             <Gallery />} />
           <Route path="/chapters" element={ 
-            <Chapters />} />
+              <Chapters />} />
           <Route path="/about" element={
-            <AboutUs />} />
+              <AboutUs />} />
         </Routes>
       </BrowserRouter>
       </div>
