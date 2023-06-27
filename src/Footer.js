@@ -18,9 +18,9 @@ export default function Footer() {
                             We warmly appreciate your visit and support.</p>
 
                         <div className="social-media">
-                            <a href="https://www.facebook.com/IeeeNitc/"  ><FacebookIcon fontSize="large" className="icons" /> </a>
-                            <a href="https://www.instagram.com/ieee_nitc/?hl=en" > <InstagramIcon fontSize="large" className="icons" /> </a>
-                            <a href="https://in.linkedin.com/company/ieee-sb-nitc" > <LinkedInIcon fontSize="large" className="icons" /> </a>
+                            <a href="https://www.facebook.com/IeeeNitc/"  ><FacebookIcon fontSize="large" style={{ color: '#3A559F' }} className="icons" /> </a>
+                            <a href="https://www.instagram.com/ieee_nitc/?hl=en" > <InstagramIcon fontSize="large" style={{ color: '#833AB4' }} className="icons" /> </a>
+                            <a href="https://in.linkedin.com/company/ieee-sb-nitc" > <LinkedInIcon fontSize="large" style={{ color: '#0077B5' }} className="icons" /> </a>
                         </div>
 
                     </div>

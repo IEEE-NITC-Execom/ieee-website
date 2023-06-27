@@ -11,18 +11,16 @@
     width: 95%;
 }
 .footer {
-    background-color: #f9f9f9;
-    box-sizing: border-box;
-    outline: none;
+    background-color: #F9F9F9;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .Footer-name{
   background: -webkit-linear-gradient(36deg,#a940fe, #06d3ec);
   -webkit-background-clip: text;
+  margin-left: 10px;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -30,6 +28,7 @@
 .thankstext{
     font-family: Poppins;
     font-size: 3.4rem;
+    margin-left: 10px;
     font-weight: 500;
 }
 
@@ -67,7 +66,7 @@
 }
 
 .footer-links li a {
-    color: #757575;
+    color: #000000;
     font-weight: 500;
     text-decoration: none;
     font-size: medium;

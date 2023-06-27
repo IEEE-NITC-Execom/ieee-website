@@ -44,7 +44,7 @@ const ChaptersPage = () => {
 
                 <motion.div className='soc-2'initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }} id='cass'>
-                    <img src={image2} alt='Cass' className='chapter-image' />
+                    <img src={image2} alt='Cass' className='chapter-image' style={{ height: '300px', width: '300px' }} />
                     <div className='soc-text'>
                         <p className='soc-title'>Circuits And Systems Society</p>
                         <p className='soc-sub'>
@@ -59,7 +59,7 @@ const ChaptersPage = () => {
 
                 <motion.div className='soc-3'initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }} id='ias'>
-                    <img src={image3} alt='ias' className='chapter-image' />
+                    <img src={image3} alt='ias' className='chapter-image' style={{ height: '300px', width: '300px' }}/>
                     <div className='soc-text'>
                         <p className='soc-title'>Industry Applications Society</p>
                         <p className='soc-sub'>
@@ -77,7 +77,7 @@ const ChaptersPage = () => {
                 
                 <motion.div className='soc-4' initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }} id='eds'>
-                    <img src={image4} alt='eds' className='chapter-image' />
+                    <img src={image4} alt='eds' className='chapter-image' style={{ height: '300px', width: '300px' }}/>
                     <div className='soc-text'>
                         <p className='soc-title'>Electron Devices Society</p>
                         <p className='soc-sub'>
@@ -95,7 +95,7 @@ const ChaptersPage = () => {
 
                 <motion.div className='soc-5' initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }} id='pes'>
-                    <img src={image5} alt='pes' className='chapter-image' />
+                    <img src={image5} alt='pes' className='chapter-image' style={{ height: '300px', width: '300px' }}/>
                     <div className='soc-text'>
                         <p className='soc-title'>Power And Energy Society</p>
                         <p className='soc-sub'>
@@ -115,7 +115,7 @@ const ChaptersPage = () => {
 
                 <motion.div className='soc-6' initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }} id='wie'>
-                    <img src={image6} alt='wie' className='chapter-image' />
+                    <img src={image6} alt='wie' className='chapter-image' style={{ height: '300px', width: '300px' }}/>
                     <div className='soc-text'>
                         <p className='soc-title'>Women In Engineering</p>
                         <p className='soc-sub'>
@@ -131,7 +131,7 @@ const ChaptersPage = () => {
 
                 <motion.div className='soc-7' initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }} id='sight'>
-                    <img src={image7} alt='sight' className='chapter-image' />
+                    <img src={image7} alt='sight' className='chapter-image' style={{ height: '300px', width: '300px' }}/>
                     <div className='soc-text'>
                         <p className='soc-title'>Special Interest Group on Humanitarian Technology </p>
                         <p className='soc-sub'>
