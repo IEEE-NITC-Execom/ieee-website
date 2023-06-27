@@ -74,7 +74,20 @@ const Navbar = () => {
                 {item.text}
               </HashLink>
               </li>
-            }
+              }
+              else if (item.text === "join IEEE"){
+              return <li key={index}>
+              <a
+                href={"https://www.ieee.org/membership/join/index.html"}
+                className={index === activeItem ? "active" : "non-active"}
+                  onClick={() => handleItemClick(index)}
+                  target="_blank"
+                  rel={'noreferrer'}
+              >
+                {item.text}
+              </a>
+              </li>
+              }
             else{
               return <li key={index}>
               <Link
