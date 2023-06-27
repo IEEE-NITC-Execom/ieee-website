@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Open+Sans&display=swap');
+
+.contact-top{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-top .name{
+    width: 100%;
+    /* background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); */
+    border-radius: 10px 10px 0 0;
+}
+.con-name{
+    text-align: center;
+    line-height: 40px;
+    color: #111111;
+    font-family: "Montserrat";
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    font-weight: 500;
+    /* letter-spacing: 8px; */
+    font-size: 36px;
+    padding: 7px;
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: white;
+}
+.info{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.reg-text{
+    font-family: "Poppins";
+    font-size: medium;
+    font-weight: 300;
+}
+.head-text{
+    font-family: "Poppins";
+    font-size: large;
+    font-weight: 600;
+}
+.google-map{
+    float: right;
+    width: 30vw;
+    height: 30vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.crop{
+    width: fit-content;
+    height: inherit;
+}
+.mapimage{
+    width: fit-content;
+    height: inherit;
+    object-fit: cover;
+}
+@media screen and (max-width:1000px) {
+    
+    .contact-top .name{
+        height: 100px;
+    }
+    .con-name{
+        padding: 0px;
+    }
+    .bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .link-div{
+        margin-left: 25%;
+        width: 100%;
+        margin-right: 25%;
+    }
+}
