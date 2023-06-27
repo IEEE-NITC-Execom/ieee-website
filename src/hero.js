@@ -42,7 +42,6 @@ const Hero = () => {
                 Learn More About Us
               </Link>
             </div>
-            
           </button>
           {/* <div class="button2">
               <div class="link">
