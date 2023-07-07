@@ -164,9 +164,9 @@ const Content = () => {
 const TeamMemberCard = ({ member }) => {
     const { name, position, image, linkedin } = member;
     const [isVisible, setIsVisible] = useState(false);
+    const cardRef = useRef(null);
     
     useEffect(() => {
-        const cardRef = useRef(null);
         const observer = new IntersectionObserver((entries) => {
             const [entry] = entries;
             setIsVisible(entry.isIntersecting);
