@@ -29,6 +29,9 @@ function App() {
           <Route path="/about" element={
               <AboutUs />} />
         </Routes>
+          <Route path="/execom" element={
+              <execom />} />
+        </Routes>
       </BrowserRouter>
       </div>
       </ActiveContext.Provider>
