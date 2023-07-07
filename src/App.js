@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Gallery from "./pages/gallery"
 import Chapters from './pages/chapters';
 import AboutUs from "./pages/aboutus";
+import execom from "./pages/execom";
 import { ActiveContext } from './activecontext';
 import { useState } from 'react';
 
