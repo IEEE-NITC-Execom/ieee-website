@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Gallery from "./pages/gallery"
 import Chapters from './pages/chapters';
 import AboutUs from "./pages/aboutus";
-import Execom from "./pages/execom";
+import ExecomPage from "./pages/execom";
 import { ActiveContext } from './activecontext';
 import { useState } from 'react';
 
@@ -31,7 +31,7 @@ function App() {
               <AboutUs />} />
         </Routes>
           <Route path="/execom" element={
-              <execom />} />
+              <ExecomPage />} />
         </Routes>
       </BrowserRouter>
       </div>
