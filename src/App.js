@@ -29,8 +29,7 @@ function App() {
               <Chapters />} />
           <Route path="/about" element={
               <AboutUs />} />
-        </Routes>
-          <Route path="/execom" element={
+         <Route path="/execom" element={
               <ExecomPage />} />
         </Routes>
       </BrowserRouter>
