@@ -3,7 +3,7 @@ import Footer from "../Footer"
 import Execom from "../Execom"
 import '../Execom_styles.css';
 
-const execom = () => {
+const Execom = () => {
     return (
       <>
        <Navbar />
@@ -15,4 +15,4 @@ const execom = () => {
     )
 }
 
-export default execom
+export default Execom
