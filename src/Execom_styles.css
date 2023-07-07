@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+
+.Execom-page {
+    /* background: linear-gradient(120deg, #ff6b6b, #3490de); */
+    background: linear-gradient(90deg, #a940fe, #06d3ec);
+
+}
+
+.heading {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #1D1D1F;
+    text-align: center;
+    font-size: 50px;
+}
+
+.heading2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #1D1D1F;
+    text-align: center;
+    font-size: 50px;
+}
+
+.team-page-background {
+    position: relative;
+    overflow: hidden;
+}
+
+.Name {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.iconButton {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.iconButton:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+.reveal-card:hover {
+    transform: scale(1.06);
+    transition: transform 0.3s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
