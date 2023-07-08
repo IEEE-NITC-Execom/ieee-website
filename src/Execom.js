@@ -231,7 +231,7 @@ const TeamMemberCard = ({ member }) => {
 
 const Execom = () => {
     return (
-        <React.Fragment>
+        <>
             <Content />
             <CssBaseline />
             {/* maxWidth="lg" sx={{ py: 9 }} */}
@@ -386,7 +386,7 @@ const Execom = () => {
                     </Grid>
                 </Stack>
             </Container>
-        </React.Fragment>
+        </>
     );
 };
 
