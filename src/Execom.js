@@ -1,5 +1,5 @@
 import './Execom_styles.css';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -11,32 +11,32 @@ import Container from '@mui/material/Container';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
 
-import Abhiram from './assets/Execom_members/Abhiram.jpg';
-import Anandakrishnan from './assets/Execom_members/Anandakrishnan.jpg';
-import AdithyaKrishna from './assets/Execom_members/AdithyaKrishna.jpg';
-import JoelJohn from './assets/Execom_members/JoelJohn.jpg';
-import Manasi from './assets/Execom_members/Manasi.jpg';
-import Linda from './assets/Execom_members/Linda.jpg';
-import Vishnu from './assets/Execom_members/Vishnu.jpg';
-import Nandhana from './assets/Execom_members/Nandhana.jpg';
-import Anakha from './assets/Execom_members/Anakha.jpg';
-import Piyush from './assets/Execom_members/Piyush.jpg';
-import Sourab from './assets/Execom_members/Sourab.jpg';
-import Gautham from './assets/Execom_members/Gautham.jpg';
-import AdithyanR from './assets/Execom_members/AdithyanR.jpg';
-import Stuthy from './assets/Execom_members/Stuthy.jpg';
-import Toms from './assets/Execom_members/Toms.jpeg';
-import Afshan from './assets/Execom_members/Afshan.jpg';
-import Rehan from './assets/Execom_members/Rehan.jpg';
-import Aileen from './assets/Execom_members/Aileen.jpg';
-import Akash from './assets/Execom_members/Akash.jpg';
-import Arathy from './assets/Execom_members/Arathy.jpg';
-import Arvind from './assets/Execom_members/Arvind.jpg';
-import Ben from './assets/Execom_members/Ben.jpeg';
-import Hrithik from './assets/Execom_members/Hrithik.jpg';
-import Lakshmi from './assets/Execom_members/Lakshmi.jpg';
-import Naureen from './assets/Execom_members/Naureen.jpg';
-import Swathy from './assets/Execom_members/Swathy.jpg';
+import Abhiram from './assets/Abhiram.jpg';
+import Anandakrishnan from './assets/Anandakrishnan.jpg';
+import AdithyaKrishna from './assets/AdithyaKrishna.jpg';
+import JoelJohn from './assets/JoelJohn.jpg';
+import Manasi from './assets/Manasi.jpg';
+import Linda from './assets/Linda.jpg';
+import Vishnu from './assets/Vishnu.jpg';
+import Nandhana from './assets/Nandhana.jpg';
+import Anakha from './assets/Anakha.jpg';
+import Piyush from './assets/Piyush.jpg';
+import Sourab from './assets/Sourab.jpg';
+import Gautham from './assets/Gautham.jpg';
+import AdithyanR from './assets/AdithyanR.jpg';
+import Stuthy from './assets/Stuthy.jpg';
+import Toms from './assets/Toms.jpeg';
+import Afshan from './assets/Afshan.jpg';
+import Rehan from './assets/Rehan.jpg';
+import Aileen from './assets/Aileen.jpg';
+import Akash from './assets/Akash.jpg';
+import Arathy from './assets/Arathy.jpg';
+import Arvind from './assets/Arvind.jpg';
+import Ben from './assets/Ben.jpeg';
+import Hrithik from './assets/Hrithik.jpg';
+import Lakshmi from './assets/Lakshmi.jpg';
+import Naureen from './assets/Naureen.jpg';
+import Swathy from './assets/Swathy.jpg';
 
 const generalMembers = [
     { name: 'Anupam Kurien Mathew', position: 'Chairperson', image: null, linkedin: null },
@@ -85,10 +85,10 @@ const societyMembers_EDS = [
 ];
 const societyMembers_CS = [
 
-    { name: '', position: 'Chairperson', image: null, linkedin: null },
+    { name: '#', position: 'Chairperson', image: null, linkedin: null },
     { name: 'Vishnu Mohan E S', position: 'Vice Chairperson', image: Vishnu, linkedin: 'https://www.linkedin.com/in/vishnu-mohan-e-s-15b793228' },
-    { name: '', position: 'Secretary', image: null, linkedin: null },
-    { name: '', position: 'Joint Secretary', image: null, linkedin: null },
+    { name: '#', position: 'Secretary', image: null, linkedin: null },
+    { name: '#', position: 'Joint Secretary', image: null, linkedin: null },
     { name: 'Mohd Rehan Ansari', position: 'Webmaster', image: Rehan, linkedin: 'https://www.linkedin.com/in/mohd-rehan-ansari-58bab0247' },
 
 ];
@@ -103,7 +103,7 @@ const societyMembers_CAS = [
 ];
 const societyMembers_SIGHT = [
 
-    { name: '', position: 'Chairperson', image: null, linkedin: null },
+    { name: '#', position: 'Chairperson', image: null, linkedin: null },
     { name: 'Nandhana P', position: 'Vice Chairperson', image: Nandhana, linkedin: 'https://www.linkedin.com/in/nandanapradeep' },
     { name: 'Tilottama Basu', position: 'Secretary', image: null, linkedin: 'https://www.linkedin.com/in/tilottama-basu-71001427b/' },
     { name: 'Akash E K', position: 'Treasurer', image: Akash, linkedin: 'https://www.linkedin.com/in/akash-e-k-b47458249' },
@@ -163,32 +163,51 @@ const Content = () => {
 }
 const TeamMemberCard = ({ member }) => {
     const { name, position, image, linkedin } = member;
+    // const [isVisible, setIsVisible] = useState(false);
+    // const cardRef = useRef(null);
+
+    // useEffect(() => {
+
+    //     const observer = new IntersectionObserver((entries) => {
+    //         const [entry] = entries;
+    //         setIsVisible(entry.isIntersecting);
+    //     });
+
+    //     observer.observe(cardRef.current);
+
+    //     return () => {
+    //         observer.unobserve(cardRef.current);
+    //     };
+    // }, []);
+    // useEffect(() => {
+    //     if (isVisible) {
+    //         // Apply animation styles
+    //         cardRef.current.style.opacity = 1;
+    //         cardRef.current.style.transform = 'translateY(5)';
+    //     }
+    // }, [isVisible]);
+
     const [isVisible, setIsVisible] = useState(false);
-    const cardRef = useRef(null);
-    
+
     useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            const [entry] = entries;
-            setIsVisible(entry.isIntersecting);
-        });
+        const handleScroll = () => {
+            const top = window.pageYOffset + window.innerHeight;
+            const cardOffset = document.getElementById(name).offsetTop;
 
-        observer.observe(cardRef.current);
-
-        return () => {
-            observer.unobserve(cardRef.current);
+            if (top > cardOffset) {
+                setIsVisible(true);
+            }
         };
-    }, []);
-    useEffect(() => {
-        if (isVisible) {
-            // Apply animation styles
-            cardRef.current.style.opacity = 1;
-            cardRef.current.style.transform = 'translateY(5)';
-        }
-    }, [isVisible]);
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [name]);
 
     return (
 
-        <Card ref={cardRef} sx={{
+        <Card id={name} sx={{
             width: '100%', height: '100%', display: 'flex', flexDirection: 'column', borderRadius: '30px', opacity: isVisible ? 1 : 0,
             transition: 'opacity 1s ease-in-out', boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.5)'
         }} className="reveal-card fade-in" >
@@ -230,8 +249,9 @@ const TeamMemberCard = ({ member }) => {
 };
 
 const Execom = () => {
+
     return (
-        <>
+        <React.Fragment>
             <Content />
             <CssBaseline />
             {/* maxWidth="lg" sx={{ py: 9 }} */}
@@ -386,7 +406,7 @@ const Execom = () => {
                     </Grid>
                 </Stack>
             </Container>
-        </>
+        </React.Fragment>
     );
 };
 
