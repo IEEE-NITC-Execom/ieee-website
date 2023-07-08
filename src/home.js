@@ -6,6 +6,7 @@ import Whywe from './whyieee';
 import FrameScroll from './scrollcard';
 import { useEffect } from 'react';
 import "./home.css"
+import EventsPart from './events';
 
 function Home() {
 
@@ -18,7 +19,8 @@ function Home() {
     <div className="Home">
       <Navbar />
       <Hero />
-      <Whywe/>
+      <Whywe />
+      <EventsPart/>
       <FrameScroll />
       <Footer/>
     </div>

@@ -21,7 +21,7 @@ const Hero = () => {
             
           </p>
         </div>
-        <div class="buttons">
+        <div className="buttons">
           {/* <div class="button1">
               <div class="link">
                 <a

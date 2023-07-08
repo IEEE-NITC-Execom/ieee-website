@@ -15,6 +15,7 @@
     box-sizing: border-box;
     outline: none;
     display: flex;
+    width: 100%;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
@@ -23,6 +24,7 @@
 
 .Footer-name{
   background: -webkit-linear-gradient(36deg,#a940fe, #06d3ec);
+  margin-left: 10px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -126,12 +128,18 @@
 
 
 @media screen and (max-width:576px) {
+    .ruler{
+        width: 90%;
+        margin-left: 10px;
+        margin-right: auto;
+    }
     .APP {
         min-height: 50vh;
     }
 
     .footer {
         margin-top: 13px;
+        margin-left: 0%;
         position: sticky;
         display: grid;
         position: -webkit-sticky;
@@ -155,6 +163,7 @@
 
     .footer {
         position: sticky;
+        margin-left: 0%;
         position: -webkit-sticky;
     }
 
@@ -171,6 +180,7 @@
 
     .footer {
         position: sticky;
+        margin-left: 0%;
         position: -webkit-sticky;
     }
 

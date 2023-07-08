@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Open+Sans&family=Poppins&display=swap');
+
+.main-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 5%;
+}
+.card-section{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-section .each-card{
+    width: 240px;
+    height: 350px;
+    object-fit: contain;
+    transition: all 0.4s ease-in-out;
+    float: left;
+    padding: 1px;
+    border: 1.5px solid grey;
+}
+.img-card{
+    width: max-content;
+    object-fit: cover;
+}
+.card-section .hide-text{
+    display: none;
+}
+.card-section .show-text{
+    display: block;
+    float: right;
+    transition: all 0.4s ease-in-out;
+    width: 50%;
+    padding: 2px;
+}
+.poster-desc{
+    background-color: white;
+    padding: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: black;
+}
+
+.button-events{
+    margin: auto;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    line-height: 1em;
+    padding: 2px;
+    cursor: pointer;
+    margin-bottom: 3%;
+    transition: all 0.6s ease-in-out;
+}
+.button-events:hover{
+    background-color: black;
+}
+.button-events:hover .button-events-spl{
+    color: white;
+}
+.button-events-spl{
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all 0.6s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .main-cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-section .show-text{
+    display: block;
+    width: 100%;
+    padding: 2px;
+  }
+  
+    .poster-desc{
+        background-color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: black;
+    }
+}
+
+

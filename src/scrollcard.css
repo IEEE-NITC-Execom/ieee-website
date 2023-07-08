@@ -1,5 +1,6 @@
 .item{
     min-height: 20rem;
+    max-height: 30rem;
     min-width: 30rem;
     padding: 20px;
 }
@@ -88,4 +89,11 @@
 
 ::-webkit-scrollbar-corner {
   background: white;
+}
+
+@media (max-width: 768px) {
+  .item{
+    min-height: 15rem;
+    max-height: 20rem;
+  }
 }
