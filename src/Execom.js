@@ -118,7 +118,7 @@ const Content = () => {
     return (
         <>
             <div className="heading">
-                <Container sx={{ py: 12 }} maxWidth="sm">
+                <Container sx={{ py: 18 }} maxWidth="sm">
                     <Typography
                         component="h1"
                         variant="h3"
@@ -163,32 +163,7 @@ const Content = () => {
 }
 const TeamMemberCard = ({ member }) => {
     const { name, position, image, linkedin } = member;
-    // const [isVisible, setIsVisible] = useState(false);
-    // const cardRef = useRef(null);
-
-    // useEffect(() => {
-
-    //     const observer = new IntersectionObserver((entries) => {
-    //         const [entry] = entries;
-    //         setIsVisible(entry.isIntersecting);
-    //     });
-
-    //     observer.observe(cardRef.current);
-
-    //     return () => {
-    //         observer.unobserve(cardRef.current);
-    //     };
-    // }, []);
-    // useEffect(() => {
-    //     if (isVisible) {
-    //         // Apply animation styles
-    //         cardRef.current.style.opacity = 1;
-    //         cardRef.current.style.transform = 'translateY(5)';
-    //     }
-    // }, [isVisible]);
-
     const [isVisible, setIsVisible] = useState(false);
-
     useEffect(() => {
         const handleScroll = () => {
             const top = window.pageYOffset + window.innerHeight;
@@ -208,7 +183,7 @@ const TeamMemberCard = ({ member }) => {
     return (
 
         <Card id={name} sx={{
-            width: '100%', height: '100%', display: 'flex', flexDirection: 'column', borderRadius: '30px', opacity: isVisible ? 1 : 0,
+            width: { xs: '250px', sm: '300px', md: '300px' }, height: '100%', display: 'flex', flexDirection: 'column', borderRadius: '30px', opacity: isVisible ? 1 : 0,
             transition: 'opacity 1s ease-in-out', boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.5)'
         }} className="reveal-card fade-in" >
             <CardMedia
@@ -267,8 +242,11 @@ const Execom = () => {
 
                 </Typography>
 
-                <Stack spacing={4} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
-                    <Grid container spacing={9}>
+                <Stack spacing={{ xs: 10, sm: 3, md: 4 }} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
+                    <Grid container direction={{ xs: "column", sm: "row" }}
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={{ xs: 12, md: 10, lg: 8 }}  >
                         {generalMembers.map((member, index) => (
                             <Grid item key={index} xs={12} sm={6} md={4}>
                                 <TeamMemberCard member={member} />
@@ -286,9 +264,11 @@ const Execom = () => {
                     sx={{ py: 2, marginTop: '15%', marginBottom: '4%', padding: '2%', border: '2px solid black', background: '#1D1D1F', borderRadius: '25px' }}>
                     Women in Engineering Society(WIE)
                 </Typography>
-                <Stack spacing={4} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
-
-                    <Grid container spacing={9} >
+                <Stack spacing={{ xs: 10, sm: 3, md: 4 }} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
+                    <Grid container direction={{ xs: "column", sm: "row" }}
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={{ xs: 12, md: 10, lg: 8 }} >
                         {societyMembers_WIE.map((member, index) => (
                             <Grid item key={index} xs={12} sm={6} md={4}>
                                 <TeamMemberCard member={member} />
@@ -305,8 +285,11 @@ const Execom = () => {
                     sx={{ py: 2, marginTop: '20%', marginBottom: '4%', padding: '2%', border: '2px solid black', background: '#1D1D1F', borderRadius: '25px' }}>
                     Industrial Application Society(IAS)
                 </Typography>
-                <Stack spacing={4} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
-                    <Grid container spacing={9}>
+                <Stack spacing={{ xs: 10, sm: 3, md: 4 }} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
+                    <Grid container direction={{ xs: "column", sm: "row" }}
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={{ xs: 12, md: 10, lg: 8 }} >
                         {societyMembers_IAS.map((member, index) => (
                             <Grid item key={index} xs={12} sm={6} md={4}>
                                 <TeamMemberCard member={member} />
@@ -323,8 +306,11 @@ const Execom = () => {
                     sx={{ py: 2, marginTop: '20%', marginBottom: '4%', padding: '2%', border: '2px solid black', background: '#1D1D1F', borderRadius: '25px' }}>
                     Electron Devices Society (EDS)
                 </Typography>
-                <Stack spacing={4} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
-                    <Grid container spacing={9}>
+                <Stack spacing={{ xs: 10, sm: 3, md: 4 }} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
+                    <Grid container direction={{ xs: "column", sm: "row" }}
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={{ xs: 12, md: 10, lg: 8 }} >
                         {societyMembers_EDS.map((member, index) => (
                             <Grid item key={index} xs={12} sm={6} md={4}>
                                 <TeamMemberCard member={member} />
@@ -341,8 +327,11 @@ const Execom = () => {
                     sx={{ py: 2, marginTop: '20%', marginBottom: '4%', padding: '2%', border: '2px solid black', background: '#1D1D1F', borderRadius: '25px' }}>
                     Computer Society(CS)
                 </Typography>
-                <Stack spacing={4} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
-                    <Grid container spacing={9}>
+                <Stack spacing={{ xs: 10, sm: 3, md: 4 }} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
+                    <Grid container direction={{ xs: "column", sm: "row" }}
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={{ xs: 12, md: 10, lg: 8 }} >
                         {societyMembers_CS.map((member, index) => (
                             <Grid item key={index} xs={12} sm={6} md={4}>
                                 <TeamMemberCard member={member} />
@@ -359,8 +348,11 @@ const Execom = () => {
                     sx={{ py: 2, marginTop: '20%', marginBottom: '4%', padding: '2%', border: '2px solid black', background: '#1D1D1F', borderRadius: '25px' }}>
                     Circuits and Systems Society(CAS)
                 </Typography>
-                <Stack spacing={4} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
-                    <Grid container spacing={9}>
+                <Stack spacing={{ xs: 10, sm: 3, md: 4 }} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
+                    <Grid container direction={{ xs: "column", sm: "row" }}
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={{ xs: 12, md: 10, lg: 8 }} >
                         {societyMembers_CAS.map((member, index) => (
                             <Grid item key={index} xs={12} sm={6} md={4}>
                                 <TeamMemberCard member={member} />
@@ -377,8 +369,11 @@ const Execom = () => {
                     sx={{ py: 2, marginTop: '20%', marginBottom: '4%', padding: '2%', border: '2px solid black', background: '#1D1D1F', borderRadius: '25px' }}>
                     Special Interest Group on Humanitarian Technology (SIGHT)
                 </Typography>
-                <Stack spacing={4} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
-                    <Grid container spacing={9}>
+                <Stack spacing={{ xs: 10, sm: 3, md: 4 }} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
+                    <Grid container direction={{ xs: "column", sm: "row" }}
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={{ xs: 12, md: 10, lg: 8 }} >
                         {societyMembers_SIGHT.map((member, index) => (
                             <Grid item key={index} xs={12} sm={6} md={4}>
                                 <TeamMemberCard member={member} />
@@ -396,8 +391,11 @@ const Execom = () => {
 
                     Education Society (EdSoc)
                 </Typography>
-                <Stack spacing={4} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
-                    <Grid container spacing={9} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Stack spacing={{ xs: 10, sm: 3, md: 4 }} sx={{ pt: 4 }} xs={12} sm={6} md={4}>
+                    <Grid container direction={{ xs: "column", sm: "row" }}
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={{ xs: 12, md: 10, lg: 8 }} >
                         {societyMembers_EdSoc.map((member, index) => (
                             <Grid item key={index} xs={12} sm={6} md={4} >
                                 <TeamMemberCard member={member} />
@@ -411,3 +409,4 @@ const Execom = () => {
 };
 
 export default Execom;
+
