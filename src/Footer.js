@@ -67,7 +67,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div class="bottom-content">
+                <div className="bottom-content">
                     <div className="container-2">
                         <hr style={{
                             backgroundColor: "rgb(158, 150, 150)",
@@ -77,7 +77,7 @@ export default function Footer() {
                         }} />
 
 
-                        <div class="bottom">
+                        <div className="bottom">
                             {`©️Copyright ${year} IEEE SB NITC.All rights reserved`}
                         </div>
                     </div>

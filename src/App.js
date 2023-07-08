@@ -8,6 +8,7 @@ import { ActiveContext } from './activecontext';
 import { useState } from 'react';
 import EventPart from './pages/eventprogress';
 import "./App.css"
+import Loading from './loading';
 
 function App() {
 
@@ -31,8 +32,8 @@ function App() {
       "./assets/scrollimages/12.jpg",
       "./assets/scrollimages/13.jpg",
     ];
-
     cacheImages(imgs);
+    setTimeout(() => setIsLoading(false), 2000)
   }, []);
 
   const cacheImages = async (srcArray) => {
@@ -48,7 +49,6 @@ function App() {
 
     await Promise.all(promises);
 
-    setIsLoading(false);
   }
 
   return (
@@ -57,7 +57,7 @@ function App() {
         {
           isLoading ?
             <div className='spinner'>
-              Spinning
+              <Loading/>
             </div>
             :
             <BrowserRouter>

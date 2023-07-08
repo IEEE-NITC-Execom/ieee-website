@@ -32,10 +32,10 @@ const GalleryImg = () => {
                 <p className='page-text'>GALLERIA</p>
             </div>
             <div className='image-row'>
-                {images.map((each) => {
+                {images.map((each,index) => {
                         return(
                         <motion.div className="each-item" initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}>
+                                whileInView={{ opacity: 1 }} key={index}>
                                 
                                 <img src={each} alt="each of images" className="image-gallery" key={each} />
                                 

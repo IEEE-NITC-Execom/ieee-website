@@ -15,7 +15,6 @@
     box-sizing: border-box;
     outline: none;
     display: flex;
-    width: 100%;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
@@ -140,6 +139,7 @@
     .footer {
         margin-top: 13px;
         margin-left: 0%;
+        margin-right: 0;
         position: sticky;
         display: grid;
         position: -webkit-sticky;
