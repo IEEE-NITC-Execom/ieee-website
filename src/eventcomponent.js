@@ -18,6 +18,8 @@ import image13 from "./assets/posters/Speak_it_up.jpg"
 
 const ImageGallery = () => {
   const [activeImage, setActiveImage] = useState(null);
+  const [isHovered, setIsHovered] = useState(false);
+  
 
   const images = [
     {
@@ -114,6 +116,7 @@ const ImageGallery = () => {
 
   const handleImageHover = (index) => {
     setActiveImage(index);
+    setIsHovered(!isHovered);
   };
 
   useEffect(() => {
