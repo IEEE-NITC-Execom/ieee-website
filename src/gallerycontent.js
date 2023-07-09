@@ -41,7 +41,7 @@ const GalleryImg = () => {
                         <motion.div className="each-item" initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }} key={index}>
                                 
-                                <img src={each} alt="each of images" className="image-gallery" key={each} loading="lazy"/>
+                                <img src={each} alt="each of images" className="image-gallery" key={each} loading="eager" />
                                 
                         </motion.div>
                         )
