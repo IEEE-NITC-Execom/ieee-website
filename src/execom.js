@@ -227,6 +227,11 @@ const TeamMemberCard = ({ member }) => {
 
 const Execom = () => {
 
+    
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
     return (
         <React.Fragment>
             <Content />
