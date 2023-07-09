@@ -16,8 +16,8 @@
     outline: none;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 10px;
 }
 
@@ -70,13 +70,13 @@
 
 .footer-links li a {
     color: #757575;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
     font-size: medium;
 }
 
 .col-1 ul li a:hover {
-    color: #1D3557;
+    color: #000000;
     font-weight: 600;
     padding-left: 2px;
     transition: all 0.3s ease;

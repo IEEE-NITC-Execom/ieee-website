@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 .image-container {
   position: relative;
   display: block;
@@ -36,7 +38,11 @@
   opacity: 0;
   transition: visibility 0s, opacity 0.4s linear;
 }
-
+.info, .date{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 100%;
+}
 .image-container:hover .dialog-box {
   visibility: visible;
   opacity: 1;

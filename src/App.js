@@ -9,6 +9,7 @@ import { useState } from 'react';
 import EventPart from './pages/eventprogress';
 import "./App.css"
 import Loading from './loading';
+import ExecomPage from './pages/execomPage';
 
 function App() {
 
@@ -68,6 +69,8 @@ function App() {
                   <Home />} />
                 <Route path="/gallery" element={ 
                   <Gallery />} />
+                <Route exact path="/execom" element={ 
+                  <ExecomPage />} />
                 <Route path="/chapters" element={ 
                     <Chapters />} />
                 <Route path="/about" element={
