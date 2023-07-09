@@ -2,8 +2,13 @@ import './contacts.css'
 import React from 'react'
 import map from "./assets/map/mapimage.jpeg"
 import { Link } from 'react-router-dom'
+import { ActiveContext } from './activecontext'
+import { useContext } from 'react'
 
 const ContactsPage = () => {
+    
+    const { setActiveItem } = useContext(ActiveContext);
+    setActiveItem(4);
 
     return (
         <div className='contact-top'>

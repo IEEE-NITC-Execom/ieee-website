@@ -103,6 +103,14 @@ a {
   .nav-items a {
     font-size: medium;
   }
+  .nav-items a:hover{
+  color: #78C1F3;
+  text-decoration: overline;
+}
+  .navbar .active {
+    background: none;
+  color: #068FFF;
+}
 }
 
 @media screen and (max-width: 926px) {
@@ -115,6 +123,10 @@ a {
     border-radius: 0%;
     background: transparent;
   }
+  .nav-items a:hover{
+  color: #78C1F3;
+  text-decoration: overline;
+}
   .navbar-activate{
     display: flex;
     height: auto;
@@ -180,6 +192,11 @@ a {
   .nav-items {
     display: none;
   }
+  
+  .navbar .active {
+    background: none;
+  color: #068FFF;
+}
 
   .logo {
     margin: 0;

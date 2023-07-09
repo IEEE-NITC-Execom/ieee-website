@@ -14,10 +14,14 @@ import image13 from './assets/scrollimages/13.jpg';
 import './gallerycontent.css';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
-import { useEffect } from 'react';
+import { useEffect,useContext } from 'react';
+import { ActiveContext } from './activecontext';
 
 
 const GalleryImg = () => {
+    
+    const { setActiveItem } = useContext(ActiveContext);
+    setActiveItem(3);
 
     const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13];
 

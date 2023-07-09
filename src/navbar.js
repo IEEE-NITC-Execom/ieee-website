@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const [isMobile, setIsMobile] = useState(false);
   const [navbar, setNavbar] = useState(false);
-  const {activeItem, setActiveItem} = useContext(ActiveContext)
+  const { activeItem, setActiveItem } = useContext(ActiveContext);
 
   const changeback = () => {
 

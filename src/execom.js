@@ -1,5 +1,5 @@
 import './Execom_styles.css';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useContext } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
+import { ActiveContext } from './activecontext';
 
 
 import Abhiram from './assets/execom/Abhiram.jpg';
@@ -226,6 +227,9 @@ const TeamMemberCard = ({ member }) => {
 };
 
 const Execom = () => {
+    
+    const { setActiveItem } = useContext(ActiveContext);
+    setActiveItem(2);
 
     
   useEffect(() => {
