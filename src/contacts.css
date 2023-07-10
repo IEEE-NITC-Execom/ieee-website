@@ -53,21 +53,16 @@
     font-size: large;
     font-weight: 600;
 }
-.google-map{
+.map{
     float: right;
-    width: 30vw;
-    height: 30vw;
+    width: auto;
+    height: auto;
     margin-top: auto;
     margin-bottom: auto;
 }
 .crop{
     width: fit-content;
     height: inherit;
-}
-.mapimage{
-    width: fit-content;
-    height: inherit;
-    object-fit: cover;
 }
 @media screen and (max-width:1000px) {
     
