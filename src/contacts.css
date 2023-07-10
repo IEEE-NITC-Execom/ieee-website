@@ -64,7 +64,7 @@
     width: fit-content;
     height: inherit;
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:896px) {
     
     .contact-top .name{
         height: 100px;
@@ -83,4 +83,43 @@
         width: 100%;
         margin-right: 25%;
     }
+    .map{
+        margin: auto;
+    }
+    
+    .maps-frame{
+        width: 300px;
+        height: 400px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
+@media screen and (max-width:300px) {
+    
+    .contact-top .name{
+        height: 100px;
+    }
+    .con-name{
+        padding: 0px;
+    }
+    .bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .link-div{
+        margin-left: 25%;
+        width: 100%;
+        margin-right: 25%;
+    }
+    .map{
+        margin: auto;
+    }
+    .maps-frame{
+        width: 200px;
+        height: 400px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}    
