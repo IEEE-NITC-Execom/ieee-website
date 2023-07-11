@@ -19,7 +19,7 @@ const About = () => {
         <div className="text-container-1">
       <p className="about-title">Welcome to the IEEE Student Branch at NITC!</p>
       <div className="layout">
-        <div className="image-container">
+        <div className="about-container">
           <img src={IEEESVG} alt="IEEE" className="ieee-svg" />
         </div>
           <p className="ab-cont">

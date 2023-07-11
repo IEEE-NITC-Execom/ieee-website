@@ -7,7 +7,7 @@ import "./why.css";
 const WhyWe = () => {
   return (
     <div className="page-lay">
-      <p className="heading">WHY IEEE?</p>
+      <p className="why-head">WHY IEEE?</p>
       <div className="cards">
         <div className="card">
           <img src={globalImage} alt="person" className="image" />

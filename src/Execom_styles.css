@@ -4,7 +4,6 @@
 .Execom-page {
     /* background: linear-gradient(120deg, #ff6b6b, #3490de); */
     background: linear-gradient(90deg, #a940fe, #06d3ec);
-
 }
 
 .heading {
@@ -60,3 +59,4 @@
 .fade-in {
     animation: fadeIn 1s ease-in-out;
 }
+
