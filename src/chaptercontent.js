@@ -8,10 +8,14 @@ import image7 from './assets/chapters/sight.png';
 import './chaptercontent.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { useEffect } from 'react';
+import { useEffect,useContext } from 'react';
+import { ActiveContext } from './activecontext';
 
 
 const ChaptersPage = () => {
+    
+    const { setActiveItem } = useContext(ActiveContext);
+    setActiveItem(1);
 
     useEffect(() => {
     window.scrollTo(0, 0);

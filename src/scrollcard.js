@@ -7,11 +7,15 @@ import image3 from './assets/scrollimages/3a.jpg';
 import image4 from './assets/scrollimages/4.jpg';
 import image5 from './assets/scrollimages/5.jpg';
 import image6 from './assets/scrollimages/6.jpg';
+import image7 from './assets/scrollimages/7.jpg';
+import image8 from './assets/scrollimages/8.jpg';
+import image9 from './assets/scrollimages/9.jpg';
+import image10 from './assets/scrollimages/10.jpg';
 import './scrollcard.css';
 
 const FrameScroll = () => {
 
-    const images = [image1,image2,image3,image4,image5,image6];
+    const images = [image1,image2,image3,image4,image5,image6,image7, image8,image9,image10];
 
     const [width, setwidth] = useState(0);
     const carousal = useRef(null);
@@ -31,7 +35,7 @@ const FrameScroll = () => {
                     {images.map((each) => {
                         return(
                         <motion.div className="item">
-                            <img src={each} alt="each of images" className="image" key={each}/>
+                                <img src={each} alt="each of images" className="image-gallery" key={each}/>
                         </motion.div>
                         )
                     })}

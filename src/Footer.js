@@ -27,10 +27,10 @@ export default function Footer() {
                     <div className="col-1">
                         <ul className="footer-links">
                             <li><h2>QUICK LINKS</h2></li>
-                            <li><a href="https://www.facebook.com/IeeeNitc/">IEEE.ORG</a> </li>
-                            <li><a href="https://www.facebook.com/IeeeNitc/">IEEE XTREME</a></li>
-                            <li><a href="https://www.facebook.com/IeeeNitc/">IEEE Xplore</a></li>
-                            <li><a href="https://www.facebook.com/IeeeNitc/">IEEE</a></li>
+                            <li><a href="https://www.ieee.org/" target="_blank" rel="noreferrer">IEEE.ORG</a> </li>
+                            <li><a href="https://ieeextreme.org/" target="_blank" rel="noreferrer">IEEE XTREME</a></li>
+                            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank" rel="noreferrer">IEEE Xplore</a></li>
+                            <li><a href="https://www.ieee.org/about/index.html" target="_blank" rel="noreferrer">IEEE</a></li>
 
                         </ul>
 
@@ -38,10 +38,10 @@ export default function Footer() {
                     <div className="col-1">
                         <ul className="footer-links">
                             <li><h2>MEMBERSHIPS</h2></li>
-                            <li><a href="https://www.facebook.com/IeeeNitc/">Join IEEE</a> </li>
-                            <li><a href="https://www.facebook.com/IeeeNitc/">Join a Society</a></li>
-                            <li><a href="https://www.facebook.com/IeeeNitc/">Renew Membership</a></li>
-                            <li><a href="https://www.facebook.com/IeeeNitc/">Info</a></li>
+                            <li><a href="https://www.ieee.org/membership/join/index.html" target="_blank" rel="noreferrer">Join IEEE</a> </li>
+                            <li><a href="https://www.ieee.org/membership-catalog/index.html?srchProdType=Societies&searchType=prodType" target="_blank" rel="noreferrer">Join a Society</a></li>
+                            <li><a href="https://www.ieee.org/membership/renew.html?utm_source=button_text&utm_medium=lp-membership&utm_campaign=renew" target="_blank" rel="noreferrer">Renew Membership</a></li>
+                            <li><a href="https://www.ieee.org/membership/benefits/index.html" target="_blank" rel="noreferrer">Info</a></li>
 
                         </ul>
 
@@ -67,7 +67,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div class="bottom-content">
+                <div className="bottom-content">
                     <div className="container-2">
                         <hr style={{
                             backgroundColor: "rgb(158, 150, 150)",
@@ -77,7 +77,7 @@ export default function Footer() {
                         }} />
 
 
-                        <div class="bottom">
+                        <div className="bottom">
                             {`©️Copyright ${year} IEEE SB NITC.All rights reserved`}
                         </div>
                     </div>
