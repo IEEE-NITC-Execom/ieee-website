@@ -15,6 +15,7 @@ import image10 from "./assets/posters/Logic_Gate.jpg"
 import image11 from "./assets/posters/Sudoku.jpg"
 import image12 from "./assets/posters/Solar_off_grid.jpg"
 import image13 from "./assets/posters/Speak_it_up.jpg"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ImageGallery = () => {
   const [activeImage, setActiveImage] = useState(null);
@@ -140,7 +141,7 @@ const ImageGallery = () => {
             <img src={image.src} alt={image.alt} className="eventimage" />
             {activeImage === index && (
               <div className="dialog-box">
-                <img src={image.src} alt={image.alt} className="enlarged-image" />
+                <LazyLoadImage src={image.src} alt={image.alt} className="enlarged-image" effect='blur' placeholderSrc={image.src} />
                 <h4 className="heading2">{image.heading}</h4>
                 <h4 className="date">{image.date}</h4>
                 <p className="description">{image.description}</p>

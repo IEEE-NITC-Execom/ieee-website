@@ -16,6 +16,7 @@ import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { useEffect,useContext } from 'react';
 import { ActiveContext } from './activecontext';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 const GalleryImg = () => {
@@ -41,7 +42,7 @@ const GalleryImg = () => {
                         <motion.div className="each-item" initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }} key={index}>
                                 
-                                <img src={each} alt="each of images" className="image-gallery" key={each} loading="eager" />
+                                <LazyLoadImage src={each} alt="each of images" className="image-gallery" key={each} effect='blur' placeholderSrc={each}/>
                                 
                         </motion.div>
                         )

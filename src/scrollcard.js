@@ -35,7 +35,7 @@ const FrameScroll = () => {
                     {images.map((each) => {
                         return(
                         <motion.div className="item">
-                            <img src={each} alt="each of images" className="image" key={each}/>
+                                <img src={each} alt="each of images" className="image-gallery" key={each}/>
                         </motion.div>
                         )
                     })}

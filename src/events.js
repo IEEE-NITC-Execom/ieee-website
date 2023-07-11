@@ -9,6 +9,7 @@ import { Card } from 'antd';
 import './events.css'
 import { useState } from 'react'
 
+
 const { Meta } = Card;
 
 const EventsPart = () => {
