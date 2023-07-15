@@ -38,21 +38,21 @@ import Hrithik from './assets/execom/Hrithik.jpg';
 import Lakshmi from './assets/execom/Lakshmi.jpg';
 import Naureen from './assets/execom/Naureen.jpg';
 import Swathy from './assets/execom/Swathy.jpg';
-import Tilottama from './assets/Tilottama.jpg';
-import Sanjana from './assets/Sanjana.jpg';
-import Neha from './assets/Neha.jpg';
-import Melvin from './assets/Melvin.jpg';
-import Kedar from './assets/Kedar.jpg';
-import FarahFathima from './assets/FarahFathima.jpg';
-import Dan from './assets/Dan.jpg';
-import Bhadra from './assets/Bhadra.jpg';
-import BenThomas from './assets/BenThomas.jpeg';
-import Anupam from './assets/Anupam.jpeg';
-import Pranav from './assets/Pranav.jpg';
-import Mitra from './assets/Mitra.jpg';
-import Vishnumaya from './assets/Vishnumaya.jpg';
-import Kailas from './assets/Kailas.jpeg';
-import Aabid from './assets/Aabid.jpg';
+import Tilottama from './assets/execom/Tilottama.jpg';
+import Sanjana from './assets/execom/Sanjana.jpg';
+import Neha from './assets/execom/Neha.jpg';
+import Melvin from './assets/execom/Melvin.jpg';
+import Kedar from './assets/execom/Kedar.jpg';
+import FarahFathima from './assets/execom/FarahFathima.jpg';
+import Dan from './assets/execom/Dan.jpg';
+import Bhadra from './assets/execom/Bhadra.jpg';
+import BenThomas from './assets/execom/BenThomas.jpeg';
+import Anupam from './assets/execom/Anupam.jpeg';
+import Pranav from './assets/execom/Pranav.jpg';
+import Mitra from './assets/execom/Mitra.jpg';
+import Vishnumaya from './assets/execom/Vishnumaya.jpg';
+import Kailas from './assets/execom/Kailas.jpeg';
+import Aabid from './assets/execom/Aabid.jpg';
 
 const generalMembers = [
     { name: 'Anupam Kurien Mathew', position: 'Chairperson', image: Anupam, linkedin: 'https://www.linkedin.com/in/anupam-kurien-mathew/' },
