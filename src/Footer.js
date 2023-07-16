@@ -26,7 +26,7 @@ export default function Footer() {
                     </div>
                     <div className="col-1">
                         <ul className="footer-links">
-                            <li><h2>QUICK LINKS</h2></li>
+                            <li><h2 className="foot-head">QUICK LINKS</h2></li>
                             <li><a href="https://www.ieee.org/" target="_blank" rel="noreferrer">IEEE.ORG</a> </li>
                             <li><a href="https://ieeextreme.org/" target="_blank" rel="noreferrer">IEEE XTREME</a></li>
                             <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank" rel="noreferrer">IEEE Xplore</a></li>
@@ -37,7 +37,7 @@ export default function Footer() {
                     </div>
                     <div className="col-1">
                         <ul className="footer-links">
-                            <li><h2>MEMBERSHIPS</h2></li>
+                            <li><h2 className="foot-head">MEMBERSHIPS</h2></li>
                             <li><a href="https://www.ieee.org/membership/join/index.html" target="_blank" rel="noreferrer">Join IEEE</a> </li>
                             <li><a href="https://www.ieee.org/membership-catalog/index.html?srchProdType=Societies&searchType=prodType" target="_blank" rel="noreferrer">Join a Society</a></li>
                             <li><a href="https://www.ieee.org/membership/renew.html?utm_source=button_text&utm_medium=lp-membership&utm_campaign=renew" target="_blank" rel="noreferrer">Renew Membership</a></li>
@@ -48,7 +48,7 @@ export default function Footer() {
                     </div>
                     <div className="col-1">
                         <ul className="footer-links">
-                            <li><h2>SOCIETIES</h2></li>
+                            <li><h2 className="foot-head">SOCIETIES</h2></li>
                             <li><a href="https://www.facebook.com/IeeeNitc/"><HashLink to='/chapters#ias'>IAS</HashLink></a> </li>
                             <li><a href="https://www.facebook.com/IeeeNitc/"><HashLink to='/chapters#eds'>EDS</HashLink></a></li>
                             <li><a href="https://www.facebook.com/IeeeNitc/"><HashLink to='/chapters#cs'>CS</HashLink></a></li>
@@ -59,7 +59,7 @@ export default function Footer() {
                     </div>
                     <div className="col-1">
                         <ul className="footer-links">
-                            <li><h2>AFFINITY AND SPECIAL INTEREST GROUP</h2></li>
+                            <li><h2 className="foot-head">AFFINITY AND SPECIAL INTEREST GROUP</h2></li>
                             <li><a href="https://www.facebook.com/IeeeNitc/"><HashLink to='/chapters#wie'>WIE</HashLink></a> </li>
                             <li><a href="https://www.facebook.com/IeeeNitc/"><HashLink to='/chapters#sight'>SIGHT</HashLink></a></li>
                         </ul>

@@ -82,7 +82,7 @@
     transition: all 0.3s ease;
 }
 
-.footer-links li h2 {
+.footer-links li .foot-head{
     color: #757575;
     font-size: 18px;
     margin-bottom: 18px;
