@@ -11,20 +11,21 @@
     width: 95%;
 }
 .footer {
-    background-color: #f9f9f9;
-    box-sizing: border-box;
-    outline: none;
+    background-color: #F9F9F9;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 10px;
+
 }
 
 .Footer-name{
   background: -webkit-linear-gradient(36deg,#a940fe, #06d3ec);
   margin-left: 10px;
   -webkit-background-clip: text;
+  margin-left: 10px;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -32,6 +33,7 @@
 .thankstext{
     font-family: Poppins;
     font-size: 3.4rem;
+    margin-left: 10px;
     font-weight: 500;
 }
 
