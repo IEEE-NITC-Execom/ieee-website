@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Open+Sans&display=swap');
 
 li {
   list-style: none;
@@ -19,8 +20,10 @@ a {
 }
 
 .nav-items a:hover{
-  color: #FFA372;
+  color: #78C1F3;
+  text-decoration: overline;
 }
+
 
 .navbar {
   display: flex;
@@ -29,7 +32,6 @@ a {
   height: auto;
   width: 88%;
   margin: auto;
-  border: 1px solid #3DB2FF;
   border-width: medium;
   border-radius: 2rem;
   margin-top: 10px;
@@ -73,17 +75,21 @@ a {
   transition: all 0.6s;
 }
 .nav-items a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: capitalize;
-  font-size: 20px;
-  transition: all 0.25s ease-in-out;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
 }
 .nav-items li a {
   margin-right: 2rem;
 }
 
-.active {
-  color: #ED6663;
+.navbar .active {
+  background: transparent;
+}
+.navbar-activate .active {
+  color: #068FFF;
 }
 .non-active{
   color: white;
@@ -97,8 +103,13 @@ a {
   .nav-items a {
     font-size: medium;
   }
-  .active {
-  color: #ED6663;
+  .nav-items a:hover{
+  color: #78C1F3;
+  text-decoration: overline;
+}
+  .navbar .active {
+    background: none;
+  color: #068FFF;
 }
 }
 
@@ -112,6 +123,10 @@ a {
     border-radius: 0%;
     background: transparent;
   }
+  .nav-items a:hover{
+  color: #78C1F3;
+  text-decoration: overline;
+}
   .navbar-activate{
     display: flex;
     height: auto;
@@ -177,6 +192,11 @@ a {
   .nav-items {
     display: none;
   }
+  
+  .navbar .active {
+    background: none;
+  color: #068FFF;
+}
 
   .logo {
     margin: 0;

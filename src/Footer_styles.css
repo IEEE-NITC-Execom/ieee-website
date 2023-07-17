@@ -15,10 +15,15 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
 }
 
 .Footer-name{
   background: -webkit-linear-gradient(36deg,#a940fe, #06d3ec);
+  margin-left: 10px;
   -webkit-background-clip: text;
   margin-left: 10px;
   background-clip: text;
@@ -66,14 +71,14 @@
 }
 
 .footer-links li a {
-    color: #000000;
-    font-weight: 500;
+    color: #757575;
+    font-weight: 400;
     text-decoration: none;
     font-size: medium;
 }
 
 .col-1 ul li a:hover {
-    color: #1D3557;
+    color: #000000;
     font-weight: 600;
     padding-left: 2px;
     transition: all 0.3s ease;
@@ -122,13 +127,21 @@
         padding-top: 10px;
     }
 
+
 @media screen and (max-width:576px) {
+    .ruler{
+        width: 90%;
+        margin-left: 10px;
+        margin-right: auto;
+    }
     .APP {
         min-height: 50vh;
     }
 
     .footer {
         margin-top: 13px;
+        margin-left: 0%;
+        margin-right: 0;
         position: sticky;
         display: grid;
         position: -webkit-sticky;
@@ -152,6 +165,7 @@
 
     .footer {
         position: sticky;
+        margin-left: 0%;
         position: -webkit-sticky;
     }
 
@@ -168,6 +182,7 @@
 
     .footer {
         position: sticky;
+        margin-left: 0%;
         position: -webkit-sticky;
     }
 
