@@ -1,5 +1,5 @@
 import './Execom_styles.css';
-import React, { useEffect, useState,useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -10,7 +10,6 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
-import { ActiveContext } from './activecontext';
 
 
 import Abhiram from './assets/execom/Abhiram.jpg';
@@ -39,39 +38,53 @@ import Hrithik from './assets/execom/Hrithik.jpg';
 import Lakshmi from './assets/execom/Lakshmi.jpg';
 import Naureen from './assets/execom/Naureen.jpg';
 import Swathy from './assets/execom/Swathy.jpg';
-
+import Tilottama from './assets/execom/Tilottama.jpg';
+import Sanjana from './assets/execom/Sanjana.jpg';
+import Neha from './assets/execom/Neha.jpg';
+import Melvin from './assets/execom/Melvin.jpg';
+import Kedar from './assets/execom/Kedar.jpg';
+import FarahFathima from './assets/execom/FarahFathima.jpg';
+import Dan from './assets/execom/Dan.jpg';
+import Bhadra from './assets/execom/Bhadra.jpg';
+import BenThomas from './assets/execom/BenThomas.jpeg';
+import Anupam from './assets/execom/Anupam.jpeg';
+import Pranav from './assets/execom/Pranav.jpg';
+import Mitra from './assets/execom/Mitra.jpg';
+import Vishnumaya from './assets/execom/Vishnumaya.jpg';
+import Kailas from './assets/execom/Kailas.jpeg';
+import Aabid from './assets/execom/Aabid.jpg';
 
 const generalMembers = [
-    { name: 'Anupam Kurien Mathew', position: 'Chairperson', image: null, linkedin: null },
-    { name: 'Bhadra S', position: 'Secretary', image: null, linkedin: null },
-    { name: 'Ben Thomas', position: 'Chief Link Representative', image: null, linkedin: null },
-    { name: 'Mitra Prasannan', position: 'Technical Consultant', image: null, linkedin: null },
+    { name: 'Anupam Kurien Mathew', position: 'Chairperson', image: Anupam, linkedin: 'https://www.linkedin.com/in/anupam-kurien-mathew/' },
+    { name: 'Bhadra S', position: 'Secretary', image: Bhadra, linkedin: 'https://www.linkedin.com/in/bhadra-s-2033701b8/' },
+    { name: 'Ben Thomas', position: 'Chief Link Representative', image: BenThomas, linkedin: 'https://www.linkedin.com/in/benthomas2309/' },
+    { name: 'Mitra Prasannan', position: 'Technical Consultant', image: Mitra, linkedin: 'https://www.linkedin.com/in/mitra-prasannan-3a076523b/' },
     { name: 'Anandakrishnan K', position: 'Treasurer', image: Anandakrishnan, linkedin: 'https://www.linkedin.com/in/anandakrishnan-k-48a05a250' },
     { name: 'Abhiram Sudharshanan', position: 'Vice chair', image: Abhiram, linkedin: 'https://www.linkedin.com/in/abhiram-sudharsanan-845b8624b' },
     { name: 'Lakshmi Priya S', position: 'Joint Secretary', image: Lakshmi, linkedin: 'https://www.linkedin.com/in/lakshmi-priya-s-12b2b6249' },
-    { name: 'Kedar M Kamath', position: 'Joint Secretary', image: null, linkedin: 'https://www.linkedin.com/in/kedar-m-kamath-58001b27b' },
+    { name: 'Kedar M Kamath', position: 'Joint Secretary', image: Kedar, linkedin: 'https://www.linkedin.com/in/kedar-m-kamath-58001b27b' },
     { name: 'Joel George John', position: 'Project Head', image: JoelJohn, linkedin: 'https://www.linkedin.com/in/joel-john-07299b247/' },
     { name: 'Adithya Krishna K', position: 'Technical Coordinator', image: AdithyaKrishna, linkedin: 'https://www.linkedin.com/in/adithya-krishna-a22315235' },
 
     { name: 'Ben Bejoy Kudiyirippil', position: 'Link Representative', image: Ben, linkedin: 'https://www.linkedin.com/in/benbejoy' },
-    { name: 'Kailas Nath', position: 'Membership Development Coordinator (MDC)', image: null, linkedin: 'https://www.linkedin.com/in/kailas-nath-787363224' },
+    { name: 'Kailas Nath', position: 'Membership Development Coordinator (MDC)', image: Kailas, linkedin: 'https://www.linkedin.com/in/kailas-nath-787363224' },
     // { name: '', position: 'Webmaster', image: null },
-    { name: 'Vishnumaya S', position: 'Design Consultant', image: null, linkedin: null },
+    { name: 'Vishnumaya S', position: 'Design Consultant', image: Vishnumaya, linkedin: 'https://www.linkedin.com/in/vishnumaya-s-6b3737209/' },
     { name: 'Toms K Nixon', position: 'Design Head', image: Toms, linkedin: 'https://www.linkedin.com/in/tomsknixon2002' },
 ];
 const societyMembers_WIE = [
 
-    { name: 'Neha Anwar', position: 'Chairperson', image: null, linkedin: null },
+    { name: 'Neha Anwar', position: 'Chairperson', image: Neha, linkedin: 'https://www.linkedin.com/in/neha-anwar-a3a554231/' },
     { name: 'Manasi John Varghese', position: 'Vice Chairperson', image: Manasi, linkedin: 'https://www.linkedin.com/in/manasi-john-44906b275' },
     { name: 'Aileen Elsa Ajeesh', position: 'Secretary', image: Aileen, linkedin: 'https://www.linkedin.com/in/aileen-elsa-ajeesh-696116275' },
-    { name: 'Farah Fathima', position: 'Joint Secretary', image: null, linkedin: 'https://www.linkedin.com/in/farah-fathima-902b0b279' },
+    { name: 'Farah Fathima', position: 'Joint Secretary', image: FarahFathima, linkedin: 'https://www.linkedin.com/in/farah-fathima-902b0b279' },
     { name: 'Swathy Krishna Sajeev', position: 'Technical Coordinator', image: Swathy, linkedin: 'https://www.linkedin.com/in/swathy-krishna-sajeev-78036b27b' },
 
 ];
 const societyMembers_IAS = [
 
-    { name: 'Sanjana D V', position: 'Chairperson', image: null, linkedin: null },
-    { name: 'Pranav R Nair', position: 'Vice Chairperson', image: null, linkedin: 'https://www.linkedin.com/in/pranav-rajesh-nair-29112a251' },
+    { name: 'Sanjana D V', position: 'Chairperson', image: Sanjana, linkedin: 'https://www.linkedin.com/in/sanjana-d-v-506832219' },
+    { name: 'Pranav R Nair', position: 'Vice Chairperson', image: Pranav, linkedin: 'https://www.linkedin.com/in/pranav-rajesh-nair-29112a251' },
     { name: 'Arvind Mahesh Iyer', position: 'Secretary', image: Arvind, linkedin: 'https://www.linkedin.com/in/arvind-iyer-544456249' },
     { name: 'Hrithik B Karikkot', position: 'Joint Secretary', image: Hrithik, linkedin: 'https://www.linkedin.com/mwlite/in/hrithik-b-699979204' },
     { name: 'Naureen Rukhiya', position: 'Technical Coordinator', image: Naureen, linkedin: 'https://www.linkedin.com/in/naureen-rukhiya-60a36b27b' },
@@ -79,25 +92,25 @@ const societyMembers_IAS = [
 ];
 const societyMembers_EDS = [
 
-    { name: 'Dan Mani Binu', position: 'Chairperson', image: null, linkedin: 'https://www.linkedin.com/in/dan-mani-binu-8389b4205' },
+    { name: 'Dan Mani Binu', position: 'Chairperson', image: Dan, linkedin: 'https://www.linkedin.com/in/dan-mani-binu-8389b4205' },
     { name: 'Linda Mary Zacharia', position: 'Vice Chairperson', image: Linda, linkedin: 'https://www.linkedin.com/in/linda-mary-zacharia-379962266' },
-    { name: 'Afshan Abbas', position: 'Secretary', image: Afshan, linkedin: 'https://www.linkedin.com/in/afshan-abbas-8a2ab3230' },//do over look
-    { name: 'Sourab M Kalliyan', position: 'Joint Secretary', image: Sourab, linkedin: 'https://www.linkedin.com/in/sourab-m-kalliyan' },//
-    { name: 'Aabid Mohamed A', position: 'Technical Coordinator', image: null, linkedin: 'https://www.linkedin.com/in/aabid-mohamed-a-b22a02229' },
+    { name: 'Afshan Abbas', position: 'Secretary', image: Afshan, linkedin: 'https://www.linkedin.com/in/afshan-abbas-8a2ab3230' },
+    { name: 'Sourab M Kalliyan', position: 'Joint Secretary', image: Sourab, linkedin: 'https://www.linkedin.com/in/sourab-m-kalliyan' },
+    { name: 'Aabid Mohamed A', position: 'Technical Coordinator', image: Aabid, linkedin: 'https://www.linkedin.com/in/aabid-mohamed-a-b22a02229' },
 
 ];
 const societyMembers_CS = [
 
-    { name: '#', position: 'Chairperson', image: null, linkedin: null },
+    // { name: '#', position: 'Chairperson', image: null, linkedin: null },
     { name: 'Vishnu Mohan E S', position: 'Vice Chairperson', image: Vishnu, linkedin: 'https://www.linkedin.com/in/vishnu-mohan-e-s-15b793228' },
-    { name: '#', position: 'Secretary', image: null, linkedin: null },
-    { name: '#', position: 'Joint Secretary', image: null, linkedin: null },
+    // { name: '#', position: 'Secretary', image: null, linkedin: null },
+    // { name: '#', position: 'Joint Secretary', image: null, linkedin: null },
     { name: 'Mohd Rehan Ansari', position: 'Webmaster', image: Rehan, linkedin: 'https://www.linkedin.com/in/mohd-rehan-ansari-58bab0247' },
 
 ];
 const societyMembers_CAS = [
 
-    { name: 'Melvin Manoj', position: 'Chairperson', image: null, linkedin: null },
+    { name: 'Melvin Manoj', position: 'Chairperson', image: Melvin, linkedin: 'https://www.linkedin.com/in/melvin-manoj-84a38120a/' },
     { name: 'Adithyan R', position: 'Vice Chairperson', image: AdithyanR, linkedin: 'https://www.linkedin.com/in/adithiyan-r-825558224' },
     { name: 'Gautham Babu Maveli', position: 'Secretary', image: Gautham, linkedin: 'https://www.linkedin.com/in/maveli' },
     { name: 'Anakha Pramod', position: 'Joint Secretary', image: Anakha, linkedin: 'https://www.linkedin.com/in/anakha-pramod-5ab7a2243' },
@@ -106,9 +119,9 @@ const societyMembers_CAS = [
 ];
 const societyMembers_SIGHT = [
 
-    { name: '#', position: 'Chairperson', image: null, linkedin: null },
+    // { name: '#', position: 'Chairperson', image: null, linkedin: null },
     { name: 'Nandhana P', position: 'Vice Chairperson', image: Nandhana, linkedin: 'https://www.linkedin.com/in/nandanapradeep' },
-    { name: 'Tilottama Basu', position: 'Secretary', image: null, linkedin: 'https://www.linkedin.com/in/tilottama-basu-71001427b/' },
+    { name: 'Tilottama Basu', position: 'Secretary', image: Tilottama, linkedin: 'https://www.linkedin.com/in/tilottama-basu-71001427b/' },
     { name: 'Akash E K', position: 'Treasurer', image: Akash, linkedin: 'https://www.linkedin.com/in/akash-e-k-b47458249' },
     { name: 'Stuthy K Sudheer', position: 'Project Coordinator', image: Stuthy, linkedin: 'https://www.linkedin.com/in/stuthy-k-sudheer-03b80b224' },
 
@@ -227,14 +240,6 @@ const TeamMemberCard = ({ member }) => {
 };
 
 const Execom = () => {
-    
-    const { setActiveItem } = useContext(ActiveContext);
-    setActiveItem(2);
-
-    
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
     return (
         <React.Fragment>
