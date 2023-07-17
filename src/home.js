@@ -1,13 +1,13 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Navbar from './navbar';
 import Footer from './Footer';
 import Whywe from './whyieee';
 import FrameScroll from './scrollcard';
-import { useEffect,useContext } from 'react';
+import { useEffect, useContext, Suspense, lazy } from 'react';
 import "./home.css"
 import EventsPart from './events';
 import { ActiveContext } from "./activecontext";
-import { Suspense, lazy } from 'react';
 
 const Heros = React.lazy(() => import('./hero'));
 
