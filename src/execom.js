@@ -120,7 +120,7 @@ const societyMembers_CAS = [
 const societyMembers_SIGHT = [
 
     // { name: '#', position: 'Chairperson', image: null, linkedin: null },
-    { name: 'Nandhana P', position: 'Vice Chairperson', image: Nandhana, linkedin: 'https://www.linkedin.com/in/nandanapradeep' },
+    { name: 'Nandana P', position: 'Vice Chairperson', image: Nandhana, linkedin: 'https://www.linkedin.com/in/nandanapradeep' },
     { name: 'Tilottama Basu', position: 'Secretary', image: Tilottama, linkedin: 'https://www.linkedin.com/in/tilottama-basu-71001427b/' },
     { name: 'Akash E K', position: 'Treasurer', image: Akash, linkedin: 'https://www.linkedin.com/in/akash-e-k-b47458249' },
     { name: 'Stuthy K Sudheer', position: 'Project Coordinator', image: Stuthy, linkedin: 'https://www.linkedin.com/in/stuthy-k-sudheer-03b80b224' },

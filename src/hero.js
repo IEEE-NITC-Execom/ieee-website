@@ -15,10 +15,10 @@ const Hero = () => {
         </div>
         <div className="hero-content">
           <p>
-            IEEE and its members inspire a global community through highly-cited publications, conferences,
-            technology standards, and professional and educational activities. We are the world’s largest professional
-            association advancing innovation and technological excellence for the benefit of humanity.
-            
+            IEEE SB NITC strives to foster innovation, knowledge-sharing and professional growth
+            among its members. Through our events, we provide a platform for students to explore
+            emerging technologies, expand their network and develop crucial skills. Join us as we
+            embark on this exciting journey of innovation and growth!
           </p>
         </div>
         <div className="buttons">
