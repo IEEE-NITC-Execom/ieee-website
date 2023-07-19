@@ -53,12 +53,14 @@ import Mitra from './assets/execom/Mitra.jpg';
 import Vishnumaya from './assets/execom/Vishnumaya.jpg';
 import Kailas from './assets/execom/Kailas.jpeg';
 import Aabid from './assets/execom/Aabid.jpg';
+import Antony from './assets/execom/Antony.jpeg';
 
 const generalMembers = [
     { name: 'Anupam Kurien Mathew', position: 'Chairperson', image: Anupam, linkedin: 'https://www.linkedin.com/in/anupam-kurien-mathew/' },
     { name: 'Bhadra S', position: 'Secretary', image: Bhadra, linkedin: 'https://www.linkedin.com/in/bhadra-s-2033701b8/' },
     { name: 'Ben Thomas', position: 'Chief Link Representative', image: BenThomas, linkedin: 'https://www.linkedin.com/in/benthomas2309/' },
     { name: 'Mitra Prasannan', position: 'Technical Consultant', image: Mitra, linkedin: 'https://www.linkedin.com/in/mitra-prasannan-3a076523b/' },
+    { name: 'Antony Joy', position: 'Technical Consultant', image: Antony, linkedin: 'https://www.linkedin.com/in/antony-joy/' },
     { name: 'Anandakrishnan K', position: 'Treasurer', image: Anandakrishnan, linkedin: 'https://www.linkedin.com/in/anandakrishnan-k-48a05a250' },
     { name: 'Abhiram Sudharshanan', position: 'Vice chair', image: Abhiram, linkedin: 'https://www.linkedin.com/in/abhiram-sudharsanan-845b8624b' },
     { name: 'Lakshmi Priya S', position: 'Joint Secretary', image: Lakshmi, linkedin: 'https://www.linkedin.com/in/lakshmi-priya-s-12b2b6249' },
