@@ -68,7 +68,6 @@ const generalMembers = [
     { name: 'Kedar M Kamath', position: 'Joint Secretary', image: Kedar, linkedin: 'https://www.linkedin.com/in/kedar-m-kamath-58001b27b' },
     { name: 'Joel George John', position: 'Project Head', image: JoelJohn, linkedin: 'https://www.linkedin.com/in/joel-john-07299b247/' },
     { name: 'Adithya Krishna K', position: 'Technical Coordinator', image: AdithyaKrishna, linkedin: 'https://www.linkedin.com/in/adithya-krishna-a22315235' },
-    { name: 'Antony Joy', position: 'Technical Consultant', image: Antony, linkedin: 'https://www.linkedin.com/in/antony-joy/' },
     { name: 'Ben Bejoy Kudiyirippil', position: 'Link Representative', image: Ben, linkedin: 'https://www.linkedin.com/in/benbejoy' },
     { name: 'Kailas Nath', position: 'Membership Development Coordinator (MDC)', image: Kailas, linkedin: 'https://www.linkedin.com/in/kailas-nath-787363224' },
     // { name: '', position: 'Webmaster', image: null },
