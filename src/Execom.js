@@ -53,8 +53,7 @@ import Mitra from './assets/execom/Mitra.jpg';
 import Vishnumaya from './assets/execom/Vishnumaya.jpg';
 import Kailas from './assets/execom/Kailas.jpeg';
 import Aabid from './assets/execom/Aabid.jpg';
-import Antony from "./assets/execom/Antony.jpeg";
-
+import Antony from './assets/execom/Antony.jpeg';
 
 const generalMembers = [
     { name: 'Anupam Kurien Mathew', position: 'Chairperson', image: Anupam, linkedin: 'https://www.linkedin.com/in/anupam-kurien-mathew/' },
@@ -68,7 +67,7 @@ const generalMembers = [
     { name: 'Kedar M Kamath', position: 'Joint Secretary', image: Kedar, linkedin: 'https://www.linkedin.com/in/kedar-m-kamath-58001b27b' },
     { name: 'Joel George John', position: 'Project Head', image: JoelJohn, linkedin: 'https://www.linkedin.com/in/joel-john-07299b247/' },
     { name: 'Adithya Krishna K', position: 'Technical Coordinator', image: AdithyaKrishna, linkedin: 'https://www.linkedin.com/in/adithya-krishna-a22315235' },
-    { name: 'Antony Joy', position: 'Technical Consultant', image: Antony, linkedin: 'https://www.linkedin.com/in/antony-joy/' },
+
     { name: 'Ben Bejoy Kudiyirippil', position: 'Link Representative', image: Ben, linkedin: 'https://www.linkedin.com/in/benbejoy' },
     { name: 'Kailas Nath', position: 'Membership Development Coordinator (MDC)', image: Kailas, linkedin: 'https://www.linkedin.com/in/kailas-nath-787363224' },
     // { name: '', position: 'Webmaster', image: null },
@@ -123,7 +122,7 @@ const societyMembers_CAS = [
 const societyMembers_SIGHT = [
 
     // { name: '#', position: 'Chairperson', image: null, linkedin: null },
-    { name: 'Nandana P', position: 'Vice Chairperson', image: Nandhana, linkedin: 'https://www.linkedin.com/in/nandanapradeep' },
+    { name: 'Nandhana P', position: 'Vice Chairperson', image: Nandhana, linkedin: 'https://www.linkedin.com/in/nandanapradeep' },
     { name: 'Tilottama Basu', position: 'Secretary', image: Tilottama, linkedin: 'https://www.linkedin.com/in/tilottama-basu-71001427b/' },
     { name: 'Akash E K', position: 'Treasurer', image: Akash, linkedin: 'https://www.linkedin.com/in/akash-e-k-b47458249' },
     { name: 'Stuthy K Sudheer', position: 'Project Coordinator', image: Stuthy, linkedin: 'https://www.linkedin.com/in/stuthy-k-sudheer-03b80b224' },
@@ -243,11 +242,6 @@ const TeamMemberCard = ({ member }) => {
 };
 
 const Execom = () => {
-
-    useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
 
     return (
         <React.Fragment>

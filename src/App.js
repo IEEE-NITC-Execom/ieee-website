@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Home from './home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Gallery from "./pages/gallery"
 import Chapters from './pages/chapters';
@@ -10,6 +9,8 @@ import EventPart from './pages/eventprogress';
 import "./App.css"
 import Loading from './loading';
 import ExecomPage from './pages/execomPage';
+
+const Home = React.lazy(() => import('./home'));
 
 function App() {
 
