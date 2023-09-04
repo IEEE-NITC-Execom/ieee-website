@@ -1,21 +1,21 @@
-import image1 from './assets/scrollimages/1a.jpg';
-import image2 from './assets/scrollimages/2a.jpg';
-import image3 from './assets/scrollimages/3a.jpg';
-import image4 from './assets/scrollimages/4.jpg';
-import image5 from './assets/scrollimages/5.jpg';
-import image6 from './assets/scrollimages/6.jpg';
-import image7 from './assets/scrollimages/7.jpg';
-import image8 from './assets/scrollimages/8.jpg';
-import image9 from './assets/scrollimages/9.jpg';
-import image10 from './assets/scrollimages/10.jpg';
-import image11 from './assets/scrollimages/11.jpg';
-import image12 from './assets/scrollimages/12.jpg';
-import image13 from './assets/scrollimages/13.jpg';
-import './gallerycontent.css';
+import image1 from '../assets/scrollimages/1a.jpg';
+import image2 from '../assets/scrollimages/2a.jpg';
+import image3 from '../assets/scrollimages/3a.jpg';
+import image4 from '../assets/scrollimages/4.jpg';
+import image5 from '../assets/scrollimages/5.jpg';
+import image6 from '../assets/scrollimages/6.jpg';
+import image7 from '../assets/scrollimages/7.jpg';
+import image8 from '../assets/scrollimages/8.jpg';
+import image9 from '../assets/scrollimages/9.jpg';
+import image10 from '../assets/scrollimages/10.jpg';
+import image11 from '../assets/scrollimages/11.jpg';
+import image12 from '../assets/scrollimages/12.jpg';
+import image13 from '../assets/scrollimages/13.jpg';
+import '../gallerycontent.css';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { useEffect,useContext } from 'react';
-import { ActiveContext } from './activecontext';
+import { ActiveContext } from '../activecontext';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 

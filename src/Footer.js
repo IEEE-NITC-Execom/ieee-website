@@ -5,10 +5,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
-    const year = new Date().getFullYear();
     return (
-           <>
-           <hr className="ruler" />
+           <div className="footer_main">
+           <center><hr className="ruler" /></center>
             <div className="footer">
                 <div className="container-1">
                     <div className="footer-main">
@@ -69,22 +68,24 @@ export default function Footer() {
 
                 <div className="bottom-content">
                     <div className="container-2">
-                        <hr style={{
-                            backgroundColor: "rgb(158, 150, 150)",
+                        <center>
+                            <hr style={{
+                            backgroundColor: "#64CCC5",
                             border: "rgb(158, 150, 150)",
                             width:"80%",
                             height: "0.2px"
                         }} />
+                        </center>
 
 
                         <div className="bottom">
-                            {`©️Copyright ${year} IEEE SB NITC.All rights reserved`}
+                            ©️ Copyright 2023 IEEE SB NITC
                         </div>
                     </div>
                 </div>
             </div>
            
-           </>
+           </div>
     )
 }
 

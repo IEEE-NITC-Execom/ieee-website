@@ -1,6 +1,6 @@
 import Navbar from "../navbar"
 import Footer from "../Footer"
-import ChaptersPage from "../chaptercontent"
+import ChaptersPage from "../components/chaptercontent"
 
 const Chapters = () => {
     return (
