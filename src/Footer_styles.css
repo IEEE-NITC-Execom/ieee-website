@@ -7,6 +7,7 @@
 .footer_main{
     background-color: #111111;
     padding-top: 10px;
+    margin-top: 3%;
     margin-bottom: 0px;
     height: 100%;
 }
@@ -37,7 +38,6 @@
 
 .thankstext{
     font-family: Poppins;
-    font-size: 3.4rem;
     margin-left: 10px;
     font-weight: 300;
     color: #ffffff;
@@ -59,7 +59,7 @@
 }
 
 .footer-main p {
-    font-size: 0.9rem;
+    font-size: 100%;
     text-align: left;
     font-family: Poppins;
     padding: 5px;
@@ -138,6 +138,9 @@
 
 
 @media screen and (max-width:576px) {
+    .footer_main{
+        margin-top: 50px;
+    }
     .ruler{
         width: 90%;
         margin-left: auto;
@@ -168,6 +171,9 @@
 
 
 @media screen and (max-width:768px) {
+     .footer_main{
+        margin-top: 50px;
+    }
     .container-1 {
         display: block;
     }
@@ -183,7 +189,9 @@
 }
 
 @media screen and (max-width:991px) {
-
+     .footer_main{
+        margin-top: 50px;
+    }
     .container-1 {
         display: block;
     }
