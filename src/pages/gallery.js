@@ -1,6 +1,6 @@
 import Navbar from "../navbar"
 import Footer from "../Footer"
-import GalleryImg from "../gallerycontent"
+import GalleryImg from "../components/gallerycontent"
 
 const Gallery = () => {
     return (

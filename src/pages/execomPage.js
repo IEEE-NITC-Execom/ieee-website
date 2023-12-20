@@ -1,6 +1,6 @@
 import Navbar from "../navbar"
 import Footer from "../Footer"
-import Execom from "../execom"
+import Execom from "../components/execom"
 import "../Execom_styles.css"
 
 const ExecomPage = () => {

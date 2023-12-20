@@ -1,4 +1,4 @@
-import './Execom_styles.css';
+import '../Execom_styles.css';
 import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -12,48 +12,49 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
 
 
-import Abhiram from './assets/execom/Abhiram.jpg';
-import Anandakrishnan from './assets/execom/Anandakrishnan.jpg';
-import AdithyaKrishna from './assets/execom/AdithyaKrishna.jpg';
-import JoelJohn from './assets/execom/JoelJohn.jpg';
-import Manasi from './assets/execom/Manasi.jpg';
-import Linda from './assets/execom/Linda.jpg';
-import Vishnu from './assets/execom/Vishnu.jpg';
-import Nandhana from './assets/execom/Nandhana.jpg';
-import Anakha from './assets/execom/Anakha.jpg';
-import Piyush from './assets/execom/Piyush.jpg';
-import Sourab from './assets/execom/Sourab.jpg';
-import Gautham from './assets/execom/Gautham.jpg';
-import AdithyanR from './assets/execom/AdithyanR.jpg';
-import Stuthy from './assets/execom/Stuthy.jpg';
-import Toms from './assets/execom/Toms.jpeg';
-import Afshan from './assets/execom/Afshan.jpg';
-import Rehan from './assets/execom/Rehan.jpg';
-import Aileen from './assets/execom/Aileen.jpg';
-import Akash from './assets/execom/Akash.jpg';
-import Arathy from './assets/execom/Arathy.jpg';
-import Arvind from './assets/execom/Arvind.jpg';
-import Ben from './assets/execom/Ben.jpeg';
-import Hrithik from './assets/execom/Hrithik.jpg';
-import Lakshmi from './assets/execom/Lakshmi.jpg';
-import Naureen from './assets/execom/Naureen.jpg';
-import Swathy from './assets/execom/Swathy.jpg';
-import Tilottama from './assets/execom/Tilottama.jpg';
-import Sanjana from './assets/execom/Sanjana.jpg';
-import Neha from './assets/execom/Neha.jpg';
-import Melvin from './assets/execom/Melvin.jpg';
-import Kedar from './assets/execom/Kedar.jpg';
-import FarahFathima from './assets/execom/FarahFathima.jpg';
-import Dan from './assets/execom/Dan.jpg';
-import Bhadra from './assets/execom/Bhadra.jpg';
-import BenThomas from './assets/execom/BenThomas.jpeg';
-import Anupam from './assets/execom/Anupam.jpeg';
-import Pranav from './assets/execom/Pranav.jpg';
-import Mitra from './assets/execom/Mitra.jpg';
-import Vishnumaya from './assets/execom/Vishnumaya.jpg';
-import Kailas from './assets/execom/Kailas.jpeg';
-import Aabid from './assets/execom/Aabid.jpg';
-import Antony from './assets/execom/Antony.jpeg';
+import Abhiram from '../assets/execom/Abhiram.jpg';
+import Anandakrishnan from '../assets/execom/Anandakrishnan.jpg';
+import AdithyaKrishna from '../assets/execom/AdithyaKrishna.jpg';
+import JoelJohn from '../assets/execom/JoelJohn.jpg';
+import Manasi from '../assets/execom/Manasi.jpg';
+import Linda from '../assets/execom/Linda.jpg';
+import Vishnu from '../assets/execom/Vishnu.jpg';
+import Nandhana from '../assets/execom/Nandhana.jpg';
+import Anakha from '../assets/execom/Anakha.jpg';
+import Piyush from '../assets/execom/Piyush.jpg';
+import Sourab from '../assets/execom/Sourab.jpg';
+import Gautham from '../assets/execom/Gautham.jpg';
+import AdithyanR from '../assets/execom/AdithyanR.jpg';
+import Stuthy from '../assets/execom/Stuthy.jpg';
+import Toms from '../assets/execom/Toms.jpeg';
+import Afshan from '../assets/execom/Afshan.jpg';
+import Rehan from '../assets/execom/Rehan.jpg';
+import Aileen from '../assets/execom/Aileen.jpg';
+import Akash from '../assets/execom/Akash.jpg';
+import Arathy from '../assets/execom/Arathy.jpg';
+import Arvind from '../assets/execom/Arvind.jpg';
+import Ben from '../assets/execom/Ben.jpeg';
+import Hrithik from '../assets/execom/Hrithik.jpg';
+import Lakshmi from '../assets/execom/Lakshmi.jpg';
+import Naureen from '../assets/execom/Naureen.jpg';
+import Swathy from '../assets/execom/Swathy.jpg';
+import Tilottama from '../assets/execom/Tilottama.jpg';
+import Sanjana from '../assets/execom/Sanjana.jpg';
+import Neha from '../assets/execom/Neha.jpg';
+import Melvin from '../assets/execom/Melvin.jpg';
+import Kedar from '../assets/execom/Kedar.jpg';
+import FarahFathima from '../assets/execom/FarahFathima.jpg';
+import Dan from '../assets/execom/Dan.jpg';
+import Bhadra from '../assets/execom/Bhadra.jpg';
+import BenThomas from '../assets/execom/BenThomas.jpeg';
+import Anupam from '../assets/execom/Anupam.jpeg';
+import Pranav from '../assets/execom/Pranav.jpg';
+import Mitra from '../assets/execom/Mitra.jpg';
+import Vishnumaya from '../assets/execom/Vishnumaya.jpg';
+import Kailas from '../assets/execom/Kailas.jpeg';
+import Aabid from '../assets/execom/Aabid.jpg';
+import Antony from "../assets/execom/Antony.jpeg";
+
 
 const generalMembers = [
     { name: 'Anupam Kurien Mathew', position: 'Chairperson', image: Anupam, linkedin: 'https://www.linkedin.com/in/anupam-kurien-mathew/' },
@@ -67,7 +68,6 @@ const generalMembers = [
     { name: 'Kedar M Kamath', position: 'Joint Secretary', image: Kedar, linkedin: 'https://www.linkedin.com/in/kedar-m-kamath-58001b27b' },
     { name: 'Joel George John', position: 'Project Head', image: JoelJohn, linkedin: 'https://www.linkedin.com/in/joel-john-07299b247/' },
     { name: 'Adithya Krishna K', position: 'Technical Coordinator', image: AdithyaKrishna, linkedin: 'https://www.linkedin.com/in/adithya-krishna-a22315235' },
-
     { name: 'Ben Bejoy Kudiyirippil', position: 'Link Representative', image: Ben, linkedin: 'https://www.linkedin.com/in/benbejoy' },
     { name: 'Kailas Nath', position: 'Membership Development Coordinator (MDC)', image: Kailas, linkedin: 'https://www.linkedin.com/in/kailas-nath-787363224' },
     // { name: '', position: 'Webmaster', image: null },
@@ -242,6 +242,11 @@ const TeamMemberCard = ({ member }) => {
 };
 
 const Execom = () => {
+
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
     return (
         <React.Fragment>

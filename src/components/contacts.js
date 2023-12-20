@@ -1,6 +1,6 @@
-import './contacts.css'
+import '../contacts.css'
 import React from 'react'
-import { ActiveContext } from './activecontext'
+import { ActiveContext } from '../activecontext'
 import { useContext } from 'react'
 
 const ContactsPage = () => {

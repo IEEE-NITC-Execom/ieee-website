@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 .logo-ieee{
-    background-color: #FFFFFF;
+    background-color: white;
+}
+.footer_main{
+    background-color: #111111;
+    padding-top: 10px;
+    margin-top: 3%;
+    margin-bottom: 0px;
+    height: 100%;
 }
 
 .ruler{
-    border: 1px solid #3DB2FF;
+    border: 1px solid #920e8c;
     display: block;
     width: 95%;
 }
 .footer {
-    background-color: #F9F9F9;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     padding-left: 10px;
@@ -31,9 +38,9 @@
 
 .thankstext{
     font-family: Poppins;
-    font-size: 3.4rem;
     margin-left: 10px;
-    font-weight: 500;
+    font-weight: 300;
+    color: #ffffff;
 }
 
 .container-1 {
@@ -52,7 +59,7 @@
 }
 
 .footer-main p {
-    font-size: 0.9rem;
+    font-size: 100%;
     text-align: left;
     font-family: Poppins;
     padding: 5px;
@@ -70,34 +77,37 @@
 }
 
 .footer-links li a {
-    color: #757575;
+    color: #EEEEEE;
     font-weight: 400;
     text-decoration: none;
     font-size: medium;
+    font-family: "Raleway";
 }
 
 .col-1 ul li a:hover {
-    color: #000000;
-    font-weight: 600;
+    color: #ffffff;
+    font-weight: 400;
     padding-left: 2px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease-in;
 }
 
 .footer-links li .foot-head{
-    color: #757575;
+    color: #EEEEEE;
     font-size: 18px;
     margin-bottom: 18px;
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
+    font-family: "Raleway";
 
 }
 
 .bottom-content {
     font-size: 14px;
     text-align: center;
-    background-color: rgb(158, 150, 150,0.8);
+    background-color: black;
     padding-bottom: 5px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .social-media {
@@ -117,20 +127,23 @@
 }
 .bottom {
         display: block;
-        font-family: Poppins;
-        font-size: 100%;
-        font-weight: 500;
+        font-family: "Raleway";
+        font-size: 130%;
+        font-weight: 400;
         height: 100%;
-        color: black;
-        padding-bottom: 10px;
+        color: white;
         padding-top: 10px;
+        padding-bottom: 10px;
     }
 
 
 @media screen and (max-width:576px) {
+    .footer_main{
+        margin-top: 50px;
+    }
     .ruler{
         width: 90%;
-        margin-left: 10px;
+        margin-left: auto;
         margin-right: auto;
     }
     .APP {
@@ -158,10 +171,12 @@
 
 
 @media screen and (max-width:768px) {
+     .footer_main{
+        margin-top: 50px;
+    }
     .container-1 {
         display: block;
     }
-
     .footer {
         position: sticky;
         margin-left: 0%;
@@ -174,7 +189,9 @@
 }
 
 @media screen and (max-width:991px) {
-
+     .footer_main{
+        margin-top: 50px;
+    }
     .container-1 {
         display: block;
     }
