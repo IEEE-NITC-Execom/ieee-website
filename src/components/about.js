@@ -1,6 +1,6 @@
 import React from "react";
-import "./about.css";
-import IEEESVG from "./assets/svgieee.svg";
+import "../about.css";
+import IEEESVG from "../assets/svgieee.svg";
 import { useEffect } from "react";
 
 

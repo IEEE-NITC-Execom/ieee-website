@@ -5,17 +5,16 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
-    const year = new Date().getFullYear();
     return (
-           <>
-           <hr className="ruler" />
+           <div className="footer_main">
+           <center><hr className="ruler" /></center>
             <div className="footer">
                 <div className="container-1">
                     <div className="footer-main">
                         <h1 style={{ color: 'blue' }} className="Footer-name">IEEE SB NITC</h1>
-                        <p className="thankstext">Thank you for visiting our website!
+                        <p className="thankstext">Thank you for visiting our website! <br />
                             "Prepare to embark on a captivating journey through the corridors of innovation." 
-                            We warmly appreciate your visit and support.</p>
+                            <br />We warmly appreciate your visit and support.</p>
 
                         <div className="social-media">
                             <a href="https://www.facebook.com/IeeeNitc/"  ><FacebookIcon fontSize="large" style={{ color: '#3A559F' }} className="icons" /> </a>
@@ -69,22 +68,24 @@ export default function Footer() {
 
                 <div className="bottom-content">
                     <div className="container-2">
-                        <hr style={{
-                            backgroundColor: "rgb(158, 150, 150)",
+                        <center>
+                            <hr style={{
+                            backgroundColor: "#64CCC5",
                             border: "rgb(158, 150, 150)",
                             width:"80%",
                             height: "0.2px"
                         }} />
+                        </center>
 
 
                         <div className="bottom">
-                            {`©️Copyright ${year} IEEE SB NITC.All rights reserved`}
+                            ©️ Copyright 2023 IEEE SB NITC
                         </div>
                     </div>
                 </div>
             </div>
            
-           </>
+           </div>
     )
 }
 

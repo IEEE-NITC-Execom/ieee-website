@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import './eventcomponent.css'
+import '../eventcomponent.css'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import image1 from "./assets/posters/stempy.jpg"
-import image2 from "./assets/posters/research_present.jpg"
-import image3 from "./assets/posters/AI_qiuz.jpg"
-import image4 from "./assets/posters/Whats_the_q.jpg"
-import image5 from "./assets/posters/Carnival.jpg"
-import image6 from "./assets/posters/Blind_coding.jpg"
-import image7 from "./assets/posters/Dart_Game.jpg"
-import image8 from "./assets/posters/Memory_tiles.jpg"
-import image9 from "./assets/posters/Minute_to_win.jpg"
-import image10 from "./assets/posters/Logic_Gate.jpg"
-import image11 from "./assets/posters/Sudoku.jpg"
-import image12 from "./assets/posters/Solar_off_grid.jpg"
-import image13 from "./assets/posters/Speak_it_up.jpg"
+import image1 from "../assets/posters/stempy.jpg"
+import image2 from "../assets/posters/research_present.jpg"
+import image3 from "../assets/posters/AI_qiuz.jpg"
+import image4 from "../assets/posters/Whats_the_q.jpg"
+import image5 from "../assets/posters/Carnival.jpg"
+import image6 from "../assets/posters/Blind_coding.jpg"
+import image7 from "../assets/posters/Dart_Game.jpg"
+import image8 from "../assets/posters/Memory_tiles.jpg"
+import image9 from "../assets/posters/Minute_to_win.jpg"
+import image10 from "../assets/posters/Logic_Gate.jpg"
+import image11 from "../assets/posters/Sudoku.jpg"
+import image12 from "../assets/posters/Solar_off_grid.jpg"
+import image13 from "../assets/posters/Speak_it_up.jpg"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ImageGallery = () => {

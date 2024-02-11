@@ -1,15 +1,15 @@
-import image1 from './assets/chapters/cs.png';
-import image2 from './assets/chapters/cass.png';
-import image3 from './assets/chapters/ias.png';
-import image4 from './assets/chapters/eds.png';
-import image5 from "./assets/chapters/pes new.png"
-import image6 from './assets/chapters/wie.png';
-import image7 from './assets/chapters/sight.png';
-import './chaptercontent.css';
+import image1 from '../assets/chapters/cs.png';
+import image2 from '../assets/chapters/cass.png';
+import image3 from '../assets/chapters/ias.png';
+import image4 from '../assets/chapters/eds.png';
+import image5 from "../assets/chapters/pes new.png"
+import image6 from '../assets/chapters/wie.png';
+import image7 from '../assets/chapters/sight.png';
+import '../chaptercontent.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useEffect,useContext } from 'react';
-import { ActiveContext } from './activecontext';
+import { ActiveContext } from '../activecontext';
 
 
 const ChaptersPage = () => {

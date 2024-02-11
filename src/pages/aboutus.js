@@ -1,7 +1,7 @@
 import Navbar from "../navbar"
 import Footer from "../Footer"
-import About from "../about"
-import ContactsPage from "../contacts"
+import About from "../components/about"
+import ContactsPage from "../components/contacts"
 
 const AboutUs = () => {
     return (

@@ -54,7 +54,7 @@ function App() {
   }
 
   return (
-    <ActiveContext.Provider value={{activeItem, setActiveItem}}>
+    <ActiveContext.Provider value={{ activeItem, setActiveItem }}>
       <div className="App">
         {
           isLoading ?
