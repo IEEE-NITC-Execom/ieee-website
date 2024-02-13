@@ -104,7 +104,7 @@ const societyMembers_EDS = [
 const societyMembers_CS = [
 
     // { name: '#', position: 'Chairperson', image: null, linkedin: null },
-    { name: 'Vishnu Mohan E S', position: 'Vice Chairperson', image: Vishnu, linkedin: 'https://www.linkedin.com/in/vishnu-mohan-e-s-15b793228' },
+    { name: 'Vishnu Mohan E S', position: 'Chairperson', image: Vishnu, linkedin: 'https://www.linkedin.com/in/vishnu-mohan-e-s-15b793228' },
     // { name: '#', position: 'Secretary', image: null, linkedin: null },
     // { name: '#', position: 'Joint Secretary', image: null, linkedin: null },
     { name: 'Mohd Rehan Ansari', position: 'Webmaster', image: Rehan, linkedin: 'https://www.linkedin.com/in/mohd-rehan-ansari-58bab0247' },

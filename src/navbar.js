@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./navbar.css";
-import Logo from "./assets/logo.png";
+import Logo from "./assets/logowhite.svg";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { ActiveContext } from "./activecontext";
