@@ -88,6 +88,18 @@ const Navbar = () => {
               </a>
               </li>
               }
+              else if (item.text === "home"){
+                return <li key={index}>
+                <Link
+                to={'/' + item.text}
+                className={index === activeItem ? "active" : "non-active"}
+                onClick={() => handleItemClick(index)}
+                style={{ color: 'white' }}
+              >
+                {item.text}
+              </Link>
+                </li>
+                }
             else{
               return <li key={index}>
               <Link
